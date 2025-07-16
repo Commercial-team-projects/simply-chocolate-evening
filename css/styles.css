@@ -1,0 +1,22 @@
+.benefits {
+  background-color: #1e1823;
+}
+
+.benefits-item-icon {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+}
+
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+}
+.benefits-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
