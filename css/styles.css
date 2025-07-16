@@ -1,0 +1,37 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    color: #434455;
+    background-color: #fff;
+    width: 1440px;
+    margin: 0 auto;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+p {
+    margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+/**/
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
