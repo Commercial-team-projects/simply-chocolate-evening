@@ -1,21 +1,26 @@
-*,*::after,*::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 body {
-    font-family: "Montserat", sans-serif;
-    color: #111111;
-    background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
-
+  font-family: "Montserat", sans-serif;
+  color: #111111;
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -24,12 +29,68 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 /**/
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+.footer-section {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+
+.footer-slogan {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.footer-slogan > .accent {
+  color: #fd9222;
+}
+
+.footer-line {
+  border-bottom: 1px;
+  opacity: 10%;
+}
+
+.footer-section .contact-subtitle {
+  font-weight: 500;
+  line-height: 1.29;
+}
+
+.footer-section .contact-item a {
+  letter-spacing: -0.02em;
+  line-height: 1.29;
+}
+
+.footer-section .nav-item {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.subscribe-input {
+  /* ToDo: change with paddings and input */
+  text-align: center;
+  width: 313px;
+  height: 52px;
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px rgba(255, 255, 255, 0.15) solid;
+  border-radius: 50px;
+}
+.subscribe-btn {
+  background-color: #fd9222;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  /* ToDo: change with paddings */
+  width: 137px;
+  height: 52px;
 }
