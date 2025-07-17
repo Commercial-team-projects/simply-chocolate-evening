@@ -1,0 +1,35 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserat", sans-serif;
+    color: #111111;
+    background-color: #fff;
+    width: 1440px;
+    margin: 0 auto;
+
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    
+}
+p {
+    margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+/**/
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
