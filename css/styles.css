@@ -1,23 +1,28 @@
-*,*::after,*::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 body {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5;
-    color: #434455;
-    background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
-
+  font-family: "Montserat", sans-serif;
+  line-height: 1.5;
+  color: #434455;
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6{
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -26,12 +31,38 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 /**/
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* HEADER */
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  /* 
+  letter-spacing: -3%; ????????????????????????????*/
+}
+
+.logo > .accent {
+  font-style: italic;
+}
+
+.navigation-list-item {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  /* 
+  letter-spacing: -1%; ????????????????????????????*/
+}
+
+.socials-icon {
+  width: 24px;
 }
