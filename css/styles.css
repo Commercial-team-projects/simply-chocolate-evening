@@ -33,3 +33,126 @@ img {
     max-width: 100%;
     object-fit: cover;
 }
+
+/*Section 3*/
+
+.taste-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+}
+
+:root{
+    --white: #FFFFFF;
+    --orange: #FD9222;
+    --black: #111111;
+    --violet: #1E1823;
+    --font-family: "Montserrat", sans-serif;
+}
+
+.taste-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}
+
+.taste-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black);
+}
+
+.ingredients-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 19px;
+    width: 1136px;
+    height: 270px;
+}
+
+.card-bar {
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+    background: var(--orange);
+}
+
+.card-milk {
+    border: 1px solid var(--orange);
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+    background: var(--white);
+}
+
+.card-nuts {
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+    background: var(--violet);
+}
+
+.card-coffee {
+    border: 1px solid var(--orange);
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+    background: var(--white);
+}
+
+.label-chocolate {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family);
+}
+
+.label-milk {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: var(--font-family);
+}
+
+.label-nuts {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--font-family);
+}
+
+.label-coffee {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: var(--font-family);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
