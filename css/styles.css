@@ -1,21 +1,26 @@
-*,*::after,*::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 body {
-    font-family: "Montserat", sans-serif;
-    color: #111111;
-    background-color: #fff;
-    width: 1440px;
-    margin: 0 auto;
-
+  font-family: "Montserat", sans-serif;
+  color: #111111;
+  background-color: #fff;
+  width: 1440px;
+  margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 0;
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
   list-style-type: none;
@@ -24,12 +29,54 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: currentColor;
+  text-decoration: none;
+  color: currentColor;
 }
 /**/
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.review-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+}
+
+.title-part {
+  color: #111;
+}
+
+.list-avatar {
+  border-radius: 100%;
+}
+
+.review-name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+}
+
+.review-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
 }
