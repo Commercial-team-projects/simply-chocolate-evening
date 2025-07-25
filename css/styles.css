@@ -10,13 +10,15 @@
   --orange: #fd9222;
   --black: #111111;
   --violet: #1e1823;
+
   /* font style */
   --font-family: "Montserrat", sans-serif;
 }
+
 body {
   font-family: "Montserat", sans-serif;
   color: #111111;
-  background-color: #fff;
+  background-color: #e9e9e9;
   width: 1440px;
   margin: 0 auto;
 }
@@ -49,14 +51,21 @@ img {
   object-fit: cover;
 }
 
+/*Page edges padding*/
+
+.container-edge-padding {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 /*header*/
 /*Section 1*/
 /*Section 2*/
 /*Section 3*/
 /*Section 4*/
-.section-4-choco-made {
+.made-section {
 }
-.choco-title {
+.made-title {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -64,19 +73,39 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+  margin-bottom: 50px;
 }
-.choco-made {
+.made-inline {
   color: var(--orange);
 }
-.choko-title-item {
+
+.made-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  margin-bottom: 100px;
+}
+.made-image-container {
+}
+
+.made-recipe-container {
+  width: 516px;
+  height: 400;
+  background-color: var(--white);
+}
+
+.made-recipe-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
 }
-.choco-list {
+.made-recipe-list {
 }
-.choco-recipe {
+.recipe-list {
+}
+.recipe-desc {
 }
 .choco-recipe-desc {
   font-weight: 400;
