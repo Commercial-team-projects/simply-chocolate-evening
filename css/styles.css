@@ -36,15 +36,7 @@ img {
 
 /*Section 3*/
 
-.taste-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 50px;
-}
-
-:root{
+:root {
     --white: #FFFFFF;
     --orange: #FD9222;
     --black: #111111;
@@ -52,107 +44,84 @@ img {
     --font-family: "Montserrat", sans-serif;
 }
 
+.taste-section {
+    background-color: var(--white);
+    padding: 77px 0 110px 0;
+}
+
+.taste-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.taste-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 32px
+}
+
 .taste-title {
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
     color: var(--black);
+    width: 411px;
+    margin-bottom: 28px;
 }
 
 .taste-description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     text-align: center;
     color: var(--black);
+    width: 486px;
+    margin-bottom: 50px;
 }
 
-.ingredients-cards {
+.taste-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
     gap: 19px;
     width: 1136px;
     height: 270px;
 }
 
-.card-bar {
+.taste-list-item {
+    padding: 28px 36px 28px 28px;
     border-radius: 15px;
     width: 270px;
     height: 270px;
-    background: var(--orange);
 }
 
-.card-milk {
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    width: 270px;
-    height: 270px;
-    background: var(--white);
+.taste-list-label {
+    margin-top: 36px;
 }
 
-.card-nuts {
-    border-radius: 15px;
-    width: 270px;
-    height: 270px;
-    background: var(--violet);
-}
-
-.card-coffee {
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    width: 270px;
-    height: 270px;
-    background: var(--white);
-}
-
-.label-chocolate {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+.taste-list-item:first-child {
+    background-color: var(--orange);
     color: var(--white);
-    font-family: var(--font-family);
 }
 
-.label-milk {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--black);
-    font-family: var(--font-family);
-}
-
-.label-nuts {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.28571;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+.taste-list-item:nth-child(3) {
+    background-color: var(--violet);
     color: var(--white);
-    font-family: var(--font-family);
 }
 
-.label-coffee {
+.taste-list-item:nth-child(even) {
+    border: 1px solid var(--orange);
+}
+
+.taste-list-label {
     font-weight: 600;
     font-size: 14px;
-    line-height: 1.28571;
+    line-height: 1.28;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: var(--black);
     font-family: var(--font-family);
-}
-
-.card-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
