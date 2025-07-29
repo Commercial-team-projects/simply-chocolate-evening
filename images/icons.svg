@@ -1,5 +1,17 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-twitter" viewBox="0 0 24 24">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M23 3c-0.958 0.675-2.018 1.192-3.14 1.53-0.602-0.692-1.403-1.183-2.293-1.406s-1.827-0.167-2.685 0.161c-0.857 0.327-1.594 0.91-2.109 1.669s-0.785 1.659-0.773 2.576v1c-1.757 0.046-3.499-0.344-5.069-1.135s-3.421-2.672-4.431-4.111c0 0-3.5 9.716 5.5 13.716-2.059 1.398-4.513 2.099-7 2 9 5 20 0 20-11.5-0.001-0.279-0.028-0.556-0.080-0.83 1.021-1.007 1.741-2.277 2.080-3.67z"></path>
+</symbol>
+<symbol id="icon-instagram" viewBox="0 0 24 24">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M17 2h-10c-2.761 0-5 2.239-5 5v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5v-10c0-2.761-2.239-5-5-5z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 11.37c0.123 0.832-0.019 1.682-0.406 2.429s-1.001 1.352-1.752 1.731c-0.751 0.378-1.603 0.51-2.434 0.376s-1.598-0.526-2.193-1.121c-0.595-0.595-0.987-1.362-1.121-2.193s-0.002-1.682 0.376-2.434c0.378-0.752 0.984-1.365 1.731-1.752s1.597-0.53 2.429-0.406c0.849 0.126 1.635 0.521 2.242 1.128s1.002 1.393 1.128 2.242z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M17.5 6.5h0.010"></path>
+</symbol>
+<symbol id="icon-chocolate" viewBox="0 0 24 24">
+<path fill="#fcf1e0" style="fill: var(--color1, #fcf1e0)" d="M2.958 15.057l8.083-13.068 0.48-0.506 6.177 4.118 0.042 2.485 1.508 2.46-6.66 10.557-9.629-6.047z"></path>
+<path fill="none" stroke="#fd9222" style="stroke: var(--color2, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16.226 17.91l-10.639-6.648M8.521 6.449l10.639 6.648M7.972 19.398l8.802-14.438M20.382 11.092c-2.28-1.425-3.175-2.538-1.708-4.944l-7.219-4.511-8.802 14.438 10.639 6.648 7.090-11.63z"></path>
+</symbol>
 <symbol id="icon-spoon" viewBox="0 0 32 32">
 <path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M15.373 13.835c-0.837-1.010-1.344-2.319-1.344-3.746 0-0.002 0-0.003 0-0.005v0c0-4.942 5.921-9.877 11.842-9.877 3.27 0.001 5.921 2.652 5.921 5.922v0c0 5.922-4.934 11.845-9.881 11.845-0.001 0-0.002 0-0.003 0-1.428 0-2.737-0.508-3.756-1.353l0.010 0.008-14.581 14.584c-0.352 0.328-0.826 0.53-1.347 0.53-1.092 0-1.977-0.885-1.977-1.977 0-0.521 0.201-0.995 0.531-1.348l-0.001 0.001 14.585-14.584z"></path>
 </symbol>
