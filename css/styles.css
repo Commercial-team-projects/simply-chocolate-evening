@@ -46,6 +46,7 @@ img {
   --orange: #fd9222;
   --black: #111111;
   --violet: #1e1823;
+  --light-orange: #fcf1e0;
   --font-family: "Montserrat", sans-serif;
 }
 
@@ -138,6 +139,11 @@ img {
   color: var(--white);
 }
 
+.footer-section .container {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
 .footer-row {
   display: flex;
   justify-content: space-between;
@@ -154,6 +160,24 @@ img {
 
 .footer-slogan .accent {
   color: var(--orange);
+}
+
+.row-1 {
+  margin-bottom: 74px;
+}
+
+.row-2 {
+  align-items: center;
+  position: relative;
+}
+
+.row-2::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: -24px;
 }
 
 .contacts-title {
@@ -174,4 +198,47 @@ img {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+}
+
+/* .footer-section .container:last-child {
+  align-items: center;
+} */
+
+.footer-section .navigation-item {
+  color: var(--white);
+}
+
+.subscribe-input {
+  background-color: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  padding: 14px 24px;
+  width: 313px;
+  margin-right: 8px;
+}
+
+.subscribe-input:focus {
+  border-color: var(--orange);
+}
+
+.subscribe-input::placeholder {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-btn {
+  border-radius: 100px;
+  padding: 18px 32px;
+  background-color: var(--orange);
+
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background: var(--light-orange);
+  color: var(--orange);
 }
