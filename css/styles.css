@@ -215,6 +215,8 @@ img {
   padding: 14px 24px;
   width: 313px;
   margin-right: 8px;
+
+  transition: border-color 500ms ease;
 }
 
 .subscribe-input:focus {
@@ -235,10 +237,12 @@ img {
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
+
+  transition: background-color, color 500ms ease;
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background: var(--light-orange);
+  background-color: var(--light-orange);
   color: var(--orange);
 }
