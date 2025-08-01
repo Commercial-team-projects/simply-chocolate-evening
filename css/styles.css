@@ -175,7 +175,7 @@ img {
   align-items: center;
 }
 
-.header-section .navigation-list {
+.navigation-list {
   display: flex;
   gap: 24px;
 }
@@ -188,7 +188,7 @@ img {
   color: var(--black);
 }
 
-.header-section .socials-list {
+.socials-list {
   display: flex;
   gap: 18px;
 }
