@@ -147,6 +147,7 @@ img {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .logo > .accent {
@@ -155,6 +156,7 @@ img {
 
 .logo .icon {
   margin-left: 4px;
+  /* fill: #fcf1e0; */
 }
 
 /* HEADER */
@@ -192,5 +194,11 @@ img {
 }
 
 .social-item-icon {
-  fill: olive;
+  stroke: var(--black);
+  fill: none;
+}
+
+.social-item-icon:hover,
+.social-item-icon:focus {
+  stroke: var(--orange);
 }
