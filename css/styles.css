@@ -196,6 +196,8 @@ img {
 .social-item-icon {
   stroke: var(--black);
   fill: none;
+
+  transition: stroke 500ms ease;
 }
 
 .social-item-icon:hover,
