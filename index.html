@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Simply Chocolate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserat:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,34 +19,50 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        Simply Chocolate
-        <img src="./images/chocolate.png" alt="chocolate image" width="24px" />
-      </a>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>How it&#x2019;s made?</li>
-          <li>Chocolate is loved</li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img
-              src="./images/instagram.png"
-              alt="instagram logo"
-              width="24px"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="https://x.com/" target="_blank">
-            <img src="./images/twitter.png" alt="twitter logo" width="24px" />
-          </a>
-        </li>
-      </ul>
+    <header class="header-section">
+      <div class="container">
+        <a class="logo" href="./index.html">
+          <span class="accent">Simply</span>&nbsp;Chocolate
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-chocolate"></use>
+          </svg>
+        </a>
+        <div class="wrapper">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Home</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">How it&#x2019;s made?</a>
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials-list">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://x.com/" target="_blank">
+                <svg class="social-item-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Section 1 -->
@@ -59,15 +77,16 @@
       </section>
       <!-- Section 2 -->
       <section class="benefits">
-        <h2 class="benefits-title">Benefits</h2>
-        <div class="container">
+        <h2 class="benefits-title visually-hidden">Benefits</h2>
+        <div class="benefits-container">
           <ul class="benefits-list">
             <li class="benefits-list-item">
-              <div class="benefits-item-icon">
-                <svg class="ben-icon" width="32" height="32">
-                  <use href="./images/icons.svg#chokolate"></use>
-                </svg>
-              </div>
+              <span class="ben-line"></span>
+                <div class="benefits-item-icon">
+                  <svg class="ben-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-chokolate"></use>
+                  </svg>
+                </div>
               <h3 class="benefits-item-title">Unsurpassed taste</h3>
               <p class="benefits-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -75,13 +94,15 @@
                 cannot be matched. Savor the richness and complexity of our
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
+              
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-item-icon">
-                <svg class="ben-icon" width="32" height="32">
-                  <use href="./images/icons.svg#dolar"></use>
-                </svg>
-              </div>
+              <span class="ben-line"></span>
+                <div class="benefits-item-icon">
+                  <svg class="ben-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-dolar"></use>
+                  </svg>
+                </div>
               <h3 class="benefits-item-title">Affordable price</h3>
               <p class="benefits-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -92,11 +113,11 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-item-icon">
-                <svg class="ben-icon" width="32" height="32">
-                  <use href="./images/icons.svg#spoon"></use>
-                </svg>
-              </div>
+                <div class="benefits-item-icon">
+                  <svg class="ben-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-spoon"></use>
+                  </svg>
+                </div>
               <h3 class="benefits-item-title">Own production</h3>
               <p class="benefits-item-text">
                 We take pride in our own production process, ensuring that every
@@ -109,66 +130,79 @@
         </div>
       </section>
       <!-- Section 3 -->
-      <section>
-        <h2>
-          IT ALL ADDS UP TO ONE EXCEPTIONAL
-          <span style="color: orange">TASTE</span> SENSATION
-        </h2>
-        <p>
-          At Simply Chocolate, we believe that the secret to exceptional
-          chocolate is in the details. From the sourcing of the finest
-          ingredients to the careful crafting of each individual piece, every
-          step of our process adds up to one exceptional taste sensation.
-        </p>
-        <ul>
-          <li>
-            <a href="#" target="_blank">MILK CHOCOLATE</a>
-            <img
-              src="./images/kisspng-milk-chocolate-bar-1.png"
-              alt="Milk Chocolate Bar"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">MILK</a>
-            <img
-              src="./images/kisspng-milk-white-chocolate-bar-2.png"
-              alt="Bottle of milk"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">NUTS</a>
-            <img
-              src="./images/kisspng-nuts-chocolate-bar-3.png"
-              alt="Hazelnut"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">SEMI - SWEET CHOCOLATE</a>
-            <img
-              src="./images/kisspng-semi-sweet-chocolate-bar-4.png"
-              alt="Coffee beans"
-              width="206"
-              height="160"
-            />
-          </li>
-        </ul>
+      <section class="taste-section">
+        <div class="taste-container">
+          <div class="taste-text-container">
+            <h2 class="taste-title">
+              IT ALL ADDS UP TO ONE EXCEPTIONAL
+              <span style="color: orange">TASTE</span> SENSATION
+            </h2>
+            <p class="taste-description">
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+          </div>
+          <ul class="taste-list">
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-milk-chocolate-bar-1.png"
+                alt="Milk Chocolate Bar"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">MILK CHOCOLATE</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-milk-white-chocolate-bar-2.png"
+                alt="Bottle of milk"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">MILK</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-nuts-chocolate-bar-3.png"
+                alt="Hazelnut"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">NUTS</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-semi-sweet-chocolate-bar-4.png"
+                alt="Coffee beans"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">SEMI - SWEET CHOCOLATE</h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Section 4 -->
       <section>
         <h2 class="choco-title">How it’s <span>made?</span></h2>
         <div>
-          <img src="./images/image.jpg" alt="chocolate dripping from whisk into bowl" width="600" height="400">
-          <h3 class="choko-title-item">Try our chocolates today and discover the perfect balance of flavor</h3>
+          <img
+            src="./images/image.jpg"
+            alt="chocolate dripping from whisk into bowl"
+            width="600"
+            height="400"
+          />
+          <h3 class="choko-title-item">
+            Try our chocolates today and discover the perfect balance of flavor
+          </h3>
           <ul>
             <li class="recipe">
               <p class="recipe-text">
-                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
               </p>
             </li>
             <li class="recipe">
@@ -178,7 +212,9 @@
             </li>
             <li class="recipe">
               <p class="recipe-text">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
               </p>
             </li>
             <li class="recipe">
@@ -188,9 +224,10 @@
             </li>
             <li>
               <p class="recipe-text">
-                Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
               </p>
-            </li class="recipe">
+            </li>
           </ul>
         </div>
       </section>
