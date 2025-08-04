@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #111111;
   background-color: #fff;
-  width: 1440px;
   margin: 0 auto;
 }
 h1,
@@ -145,4 +144,97 @@ img {
   transform: translateY(-50%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
+}
+
+
+/*Section 3*/
+
+:root {
+    --white: #FFFFFF;
+    --orange: #FD9222;
+    --black: #111111;
+    --violet: #1E1823;
+    --font-family: "Montserrat", sans-serif;
+}
+
+.taste-section {
+    background-color: var(--white);
+    padding: 77px 0 110px 0;
+}
+
+.taste-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.taste-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 32px
+}
+
+.taste-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+    width: 411px;
+    margin-bottom: 28px;
+}
+
+.taste-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--black);
+    width: 486px;
+    margin-bottom: 50px;
+}
+
+.taste-list {
+    display: flex;
+    gap: 19px;
+    width: 1136px;
+    height: 270px;
+}
+
+.taste-list-item {
+    padding: 28px 36px 28px 28px;
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
+}
+
+.taste-list-label {
+    margin-top: 36px;
+}
+
+.taste-list-item:first-child {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.taste-list-item:nth-child(3) {
+    background-color: var(--violet);
+    color: var(--white);
+}
+
+.taste-list-item:nth-child(even) {
+    border: 1px solid var(--orange);
+}
+
+.taste-list-label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-family: var(--font-family);
 }

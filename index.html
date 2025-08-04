@@ -22,7 +22,9 @@
     <header>
       <a href="./index.html">
         Simply Chocolate
-        <img src="./images/chocolate.png" alt="chocolate image" width="24px" />
+        <svg class="icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-chocolate"></use>
+        </svg>
       </a>
       <nav>
         <ul>
@@ -114,66 +116,79 @@
         </div>
       </section>
       <!-- Section 3 -->
-      <section>
-        <h2>
-          IT ALL ADDS UP TO ONE EXCEPTIONAL
-          <span style="color: orange">TASTE</span> SENSATION
-        </h2>
-        <p>
-          At Simply Chocolate, we believe that the secret to exceptional
-          chocolate is in the details. From the sourcing of the finest
-          ingredients to the careful crafting of each individual piece, every
-          step of our process adds up to one exceptional taste sensation.
-        </p>
-        <ul>
-          <li>
-            <a href="#" target="_blank">MILK CHOCOLATE</a>
-            <img
-              src="./images/kisspng-milk-chocolate-bar-1.png"
-              alt="Milk Chocolate Bar"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">MILK</a>
-            <img
-              src="./images/kisspng-milk-white-chocolate-bar-2.png"
-              alt="Bottle of milk"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">NUTS</a>
-            <img
-              src="./images/kisspng-nuts-chocolate-bar-3.png"
-              alt="Hazelnut"
-              width="206"
-              height="160"
-            />
-          </li>
-          <li>
-            <a href="#" target="_blank">SEMI - SWEET CHOCOLATE</a>
-            <img
-              src="./images/kisspng-semi-sweet-chocolate-bar-4.png"
-              alt="Coffee beans"
-              width="206"
-              height="160"
-            />
-          </li>
-        </ul>
+      <section class="taste-section">
+        <div class="taste-container">
+          <div class="taste-text-container">
+            <h2 class="taste-title">
+              IT ALL ADDS UP TO ONE EXCEPTIONAL
+              <span style="color: orange">TASTE</span> SENSATION
+            </h2>
+            <p class="taste-description">
+              At Simply Chocolate, we believe that the secret to exceptional
+              chocolate is in the details. From the sourcing of the finest
+              ingredients to the careful crafting of each individual piece,
+              every step of our process adds up to one exceptional taste
+              sensation.
+            </p>
+          </div>
+          <ul class="taste-list">
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-milk-chocolate-bar-1.png"
+                alt="Milk Chocolate Bar"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">MILK CHOCOLATE</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-milk-white-chocolate-bar-2.png"
+                alt="Bottle of milk"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">MILK</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-nuts-chocolate-bar-3.png"
+                alt="Hazelnut"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">NUTS</h3>
+            </li>
+            <li class="taste-list-item">
+              <img
+                src="./images/kisspng-semi-sweet-chocolate-bar-4.png"
+                alt="Coffee beans"
+                width="206"
+                height="160"
+              />
+              <h3 class="taste-list-label">SEMI - SWEET CHOCOLATE</h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Section 4 -->
       <section>
         <h2 class="choco-title">How it’s <span>made?</span></h2>
         <div>
-          <img src="./images/image.jpg" alt="chocolate dripping from whisk into bowl" width="600" height="400">
-          <h3 class="choko-title-item">Try our chocolates today and discover the perfect balance of flavor</h3>
+          <img
+            src="./images/image.jpg"
+            alt="chocolate dripping from whisk into bowl"
+            width="600"
+            height="400"
+          />
+          <h3 class="choko-title-item">
+            Try our chocolates today and discover the perfect balance of flavor
+          </h3>
           <ul>
             <li class="recipe">
               <p class="recipe-text">
-                Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
               </p>
             </li>
             <li class="recipe">
@@ -183,7 +198,9 @@
             </li>
             <li class="recipe">
               <p class="recipe-text">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
               </p>
             </li>
             <li class="recipe">
@@ -193,9 +210,10 @@
             </li>
             <li>
               <p class="recipe-text">
-                Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
               </p>
-            </li class="recipe">
+            </li>
           </ul>
         </div>
       </section>
