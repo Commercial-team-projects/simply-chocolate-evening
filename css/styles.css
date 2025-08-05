@@ -302,21 +302,17 @@ img {
 }
 
 .taste-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--black);
   width: 486px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .taste-list {
-  display: flex;
-  gap: 19px;
-  width: 1136px;
-  height: 270px;
   display: flex;
   gap: 19px;
   width: 1136px;
@@ -332,7 +328,6 @@ img {
 }
 
 .taste-list-label {
-  margin-top: 36px;
   padding-top: 36px;
 }
 
@@ -351,12 +346,6 @@ img {
 }
 
 .taste-list-label {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  font-family: var(--font-family);
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
