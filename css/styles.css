@@ -265,7 +265,6 @@ img {
   height: 124px;
 }
 
-
 /*Section 3*/
 
 :root {
@@ -432,160 +431,76 @@ img {
   stroke: var(--orange);
 }
 
+/* section 5 Chocolate is loved */
 
-.review-title {
+.loved-container {
+  margin-top: 100px;
+}
+.loved-title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: #fd9222;
+  margin-bottom: 90px;
 }
-
-.title-part {
+.loved-title-part {
   color: #111;
 }
-
-.list-avatar {
-  border-radius: 100%;
+.loved-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.loved-list-item {
+  width: calc((100% - 56px) / 3);
+  position: relative;
 }
 
-.review-name {
-  font-weight: 600;
+.loved-list-item-avatar {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 140px;
+}
+
+.loved-list-item-box {
+  padding: 56px 24px 0;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.lived-list-item-name {
   font-size: 18px;
-  line-height: 1.33333;
+  line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
 }
-
-.review-item {
+.loved-list-item-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  max-width: 350px;
 }
-
-.review-button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #111;
-}
-
-/* FOOTER */
-.footer-section {
-  background-color: var(--violet);
-
-  color: var(--white);
-}
-
-.footer-section .container {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-slogan {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
-  letter-spacing: -0.02em;
-
-  max-width: 300px;
-}
-
-.footer-slogan .accent {
-  color: var(--orange);
-}
-
-.row-1 {
-  margin-bottom: 74px;
-}
-
-.row-2 {
-  align-items: center;
-  position: relative;
-}
-
-.row-2::before {
-  content: "";
-
-  position: absolute;
-  width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  top: -24px;
-}
-
-.contacts-title {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-
-  margin-bottom: 14px;
-}
-
-.contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.contacts-link {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
-
-/* .footer-section .container:last-child {
-  align-items: center;
-} */
-
-.footer-section .navigation-item {
-  color: var(--white);
-}
-
-.subscribe-input {
-  background-color: transparent;
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
-  border-radius: 30px;
-  padding: 14px 24px;
-  width: 313px;
-  margin-right: 8px;
-
-  transition: border-color 500ms ease;
-}
-
-.subscribe-input:focus {
-  border-color: var(--orange);
-}
-
-.subscribe-input::placeholder {
-  font-size: 18px;
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.subscribe-btn {
+.loved-button {
+  margin: 0 auto 100px;
+  display: block;
+  border: 1px solid #fd9222;
   border-radius: 100px;
-  padding: 18px 32px;
-  background-color: var(--orange);
-
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  background-color: #fafafa;
   font-weight: 600;
-  font-size: 14px;
-  color: var(--white);
-
-  transition: background-color, color 500ms ease;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  background-color: var(--light-orange);
-  color: var(--orange);
+  font-size: 18px;
 }
