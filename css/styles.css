@@ -737,3 +737,219 @@ img {
   background-color: var(--orange);
   border: none;
 }
+
+/* #region POP-UP */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.popup-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.popup {
+  position: relative;
+  width: 311px;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 32px 24px;
+}
+
+.popup-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.popup-btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--black);
+}
+
+.popup-btn-icon:hover,
+.popup-btn-icon:focus {
+  stroke: var(--color-orange);
+}
+
+.popup-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 32px;
+  width: 263px;
+}
+
+.popup-title-acent {
+  color: var(--orange);
+}
+
+/* .popup-form {
+} */
+
+/* .popup-form-content {
+} */
+
+.popup-form-content:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.popup-label {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.popup-form-input {
+  position: relative;
+  margin-top: 4px;
+}
+
+.popup-input {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  padding: 13px 43px;
+  width: 263px;
+  height: 45px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  outline: transparent;
+}
+
+.popup-input:hover,
+.popup-input:focus {
+  border: 1.5px solid var(--orange);
+}
+
+.popup-input:hover + .popup-input-icon,
+.popup-input:focus + .popup-input-icon {
+  stroke: var(--color-orange);
+}
+
+.popup-input:active {
+  border: 1.5px solid var(--orange);
+}
+
+.popup-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke-width: 1.5px;
+  stroke: var(--black);
+  fill: none;
+}
+
+.popup-input:hover + .popup-input-icon {
+  stroke: var(--color-orange);
+}
+
+/* .popup-comment {
+} */
+
+.popup-user-comment {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  padding: 13px 18px;
+  width: 100%;
+  height: 91px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+  resize: none;
+  outline: transparent;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+}
+
+.popup-user-comment::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+/* .popup-checkbox-content {
+} */
+
+.popup-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.visually-hidden:checked + .popup-label-checkbox :first-child {
+  border-radius: 6px;
+  background-color: var(--orange);
+  border: none;
+}
+
+.popup-label-checkbox {
+  display: flex;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+
+.checkbox-custom-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  flex-shrink: 0;
+}
+
+.policy {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--orange);
+  display: contents;
+}
+
+.visually-hidden:checked + .popup-label-checkbox:first-child {
+  background-color: #fd9222;
+  border: none;
+}
+
+.popup-btn-send {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 93px;
+  height: 41px;
+  background-color: var(--color-orange);
+  border: none;
+  margin-top: 32px;
+}
+
+/* #endregion POP-UP */
