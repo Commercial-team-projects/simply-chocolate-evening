@@ -37,6 +37,7 @@
   --color-cream: #fcf1e0;
   --color-white: #fafafa;
 }
+
 /* #endregion */
 *,
 *::after,
@@ -76,10 +77,12 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+
 a {
   text-decoration: none;
   color: currentColor;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -118,21 +121,22 @@ img {
 
 .hero-list-btn {
   cursor: pointer;
+  font-size: 14px;
   border-radius: 100px;
-  padding: 14px 40px;
 }
 
 .btn-buy {
   background-color: var(--orange);
   border: none;
   font-weight: 600;
-  font-size: 14px;
+  padding: 14px 40px;
   color: var(--white);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-buy:hover {
+.btn-buy:hover,
+.btn-buy:focus {
   color: var(--orange);
   background-color: var(--bg-hero);
 }
@@ -140,12 +144,14 @@ img {
 .btn-made {
   border: 1px solid var(--white);
   color: var(--white);
+  padding: 13px 39px;
   background-color: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-made:hover {
+.btn-made:hover,
+.btn-made:focus {
   color: var(--orange);
   border-color: var(--orange);
 }
@@ -178,11 +184,13 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-scroll:hover .hero-scroll-text {
+.hero-scroll:hover .hero-scroll-text,
+.hero-scroll:focus .hero-scroll-text {
   color: var(--orange);
 }
 
-.hero-scroll:hover .hero-scroll-link {
+.hero-scroll:hover .hero-scroll-link,
+.hero-scroll:focus .hero-scroll-link {
   background-color: var(--orange);
 }
 
@@ -191,7 +199,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-scroll:hover .hero-icon-arrow {
+.hero-scroll:hover .hero-icon-arrow,
+.hero-scroll:focus .hero-icon-arrow {
   fill: var(--white);
 }
 
@@ -203,6 +212,7 @@ img {
 .benefits-container {
   padding: 50px 18px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -215,9 +225,11 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .benefits-container {
   width: 100%;
 }
+
 .benefits-list {
   width: 100%;
   display: flex;
@@ -246,6 +258,7 @@ img {
   color: var(--color-white);
   margin-bottom: 18px;
 }
+
 .benefits-item-text {
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
@@ -267,6 +280,7 @@ img {
 :root {
   --white: #ffffff;
   --orange: #fd9222;
+  --light-orange: #fcf1e0;
   --black: #111111;
   --violet: #1e1823;
   --font-family: "Montserrat", sans-serif;
@@ -277,40 +291,25 @@ img {
   padding: 77px 0 110px 0;
 }
 
-.taste-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.taste-text-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 32px;
-}
-
 .taste-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
   width: 411px;
-  margin-bottom: 28px;
+  margin: 0 auto;
+  padding-bottom: 28px;
 }
 
 .taste-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--black);
   width: 486px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .taste-list {
@@ -318,6 +317,7 @@ img {
   gap: 19px;
   width: 1136px;
   height: 270px;
+  margin: 0 auto;
 }
 
 .taste-list-item {
@@ -330,7 +330,7 @@ img {
 }
 
 .taste-list-label {
-  margin-top: 36px;
+  padding-top: 36px;
 }
 
 .taste-list-item:first-child {
@@ -348,12 +348,72 @@ img {
 }
 
 .taste-list-label {
-  font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  font-family: var(--font-family);
+}
+
+.pop-up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--color-white);
+
+  padding: 20px;
+}
+.pop-up-btn-list {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.pop-up-btn {
+  border-radius: 35px;
+  padding: 6px 16px;
+  height: 24px;
+  background-color: var(--color-orange);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: center;
+}
+
+.pop-up-btn:nth-child(2) {
+  background-color: var(--color-white);
+  border: 1px solid var(--orange);
+  color: var(--black);
+  padding: 6px 16px;
+  height: 24px;
+}
+
+.pop-up-title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+.pop-up-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  width: 230px;
+  height: 140px;
+}
+
+.taste-list-item:hover .pop-up {
+  transform: translateY(0%);
+}
+
+.taste-list-item:hover {
+  border: none;
 }
 
 .pop-up {
@@ -647,4 +707,94 @@ img {
 .subscribe-btn:focus {
   background-color: var(--light-orange);
   color: var(--orange);
+}
+
+/* section 5 Chocolate is loved */
+
+.loved-container {
+  margin-top: 100px;
+}
+
+.loved-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+  margin-bottom: 90px;
+}
+
+.loved-title-part {
+  color: #111;
+}
+
+.loved-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.loved-list-item {
+  width: calc((100% - 56px) / 3);
+  position: relative;
+}
+
+.loved-list-item-avatar {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 140px;
+}
+
+.loved-list-item-box {
+  padding: 56px 24px 0;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.lived-list-item-name {
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.loved-list-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  max-width: 350px;
+}
+
+.loved-button {
+  margin: 0 auto 100px;
+  display: block;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  background-color: #fafafa;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loved-button:hover {
+  color: var(--white);
+  background-color: var(--orange);
+  border: none;
 }
