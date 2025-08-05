@@ -147,7 +147,6 @@ img {
   height: 124px;
 }
 
-
 /*Section 3*/
 
 :root {
@@ -312,4 +311,78 @@ img {
 .social-item-icon:hover,
 .social-item-icon:focus {
   stroke: var(--orange);
+}
+
+/* section 5 Chocolate is loved */
+
+.loved-container {
+  margin-top: 100px;
+}
+.loved-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fd9222;
+  margin-bottom: 90px;
+}
+.loved-title-part {
+  color: #111;
+}
+.loved-list {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.loved-list-item {
+  width: calc((100% - 56px) / 3);
+  position: relative;
+}
+
+.loved-list-item-avatar {
+  position: absolute;
+  transform: translateY(-50%);
+  right: 140px;
+}
+
+.loved-list-item-box {
+  padding: 56px 24px 0;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+.lived-list-item-name {
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+.loved-list-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+  max-width: 350px;
+}
+.loved-button {
+  margin: 0 auto 100px;
+  display: block;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  background-color: #fafafa;
+  font-weight: 600;
+  font-size: 18px;
 }
