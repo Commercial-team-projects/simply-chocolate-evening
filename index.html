@@ -66,14 +66,35 @@
     </header>
     <main>
       <!-- Section 1 -->
-      <section>
-        <h1>
-          Treat yourself or a loved one to our finest ingredients for a moment
-          of pure delight!
-        </h1>
-        <button type="button">Buy now</button>
-        <a href="">How it's made</a>
-        <a href="#">scroll down</a>
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Treat yourself or a loved one to our finest ingredients for a moment
+            of pure delight!
+          </h1>
+          <div class="hero-btn">
+            <ul class="hero-list">
+              <li class="hero-list-item">
+                <button class="hero-list-btn btn-buy" type="button">
+                  Buy now
+                </button>
+              </li>
+              <li class="hero-list-item">
+                <button class="hero-list-btn btn-made" type="button">
+                  How it’s made
+                </button>
+              </li>
+            </ul>
+            <div class="hero-scroll">
+              <span class="hero-scroll-text">scroll down</span>
+              <a class="hero-scroll-link" href="">
+                <svg class="hero-icon-arrow" width="14" height="8">
+                  <use href="./images/icons.svg#icon-Vector-1"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Section 2 -->
       <section class="benefits">
@@ -289,22 +310,46 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>Chocolate a delicious cure for a bad day</p>
-
-      <p>Contact us</p>
-      <ul>
-        <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-        <li><a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
-      </ul>
-
-      <p>Enter your email</p>
-      <button>Subscribe</button>
-      <ul>
-        <li>Home</li>
-        <li>How it&#x2019;s made?</li>
-        <li>Chocolate is loved</li>
-      </ul>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-row row-1">
+          <p class="footer-slogan">
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="contacts">
+            <p class="contacts-title">Contact us</p>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:simplychoc@gmail.com"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-row row-2">
+          <ul class="navigation-list">
+            <li class="navigation-item">Home</li>
+            <li class="navigation-item">How it&#x2019;s made?</li>
+            <li class="navigation-item">Chocolate is loved</li>
+          </ul>
+          <form class="subscribe-form">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <button class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
