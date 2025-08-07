@@ -36,6 +36,7 @@
   --color-orange: #fd9222;
   --color-cream: #fcf1e0;
   --color-white: #fafafa;
+  --color-body-white: #E9E9E9;
 }
 
 /* #endregion */
@@ -48,7 +49,7 @@
 body {
   font-family: var(--font-family);
   color: #111111;
-  background-color: #fff;
+  background-color: var(--color-white);
   margin: 0 auto;
 }
 
@@ -353,9 +354,10 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
 /*Section 4*/
-.made-section {
-}
+.made-section {}
+
 .made-title {
   font-weight: 600;
   font-size: 24px;
@@ -366,6 +368,7 @@ img {
   color: var(--black);
   margin-bottom: 50px;
 }
+
 .made-inline {
   color: var(--orange);
 }
@@ -377,13 +380,15 @@ img {
 
   margin-bottom: 100px;
 }
-.made-image-container {
-}
+
+.made-image-container {}
 
 .made-recipe-container {
   width: 516px;
   height: 400;
   background-color: var(--white);
+  padding: 32px 59px 32px 32px;
+  border-radius: 15px;
 }
 
 .made-recipe-title {
@@ -391,19 +396,46 @@ img {
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
+  margin-bottom: 28px;
 }
-.made-recipe-list {
-}
-.recipe-list {
-}
+
+
 .recipe-desc {
+  position: relative;
 }
-.choco-recipe-desc {
+
+.ellipse::before {
+  content: "";
+  /*  display: block; */
+  background-color: #4C4C4C;
+  border-radius: 50%;
+  border: 1px solid #ECEDED;
+  min-height: 8px;
+  min-width: 8px;
+  position: absolute;
+  top: 5px;
+  left: -12px;
+
+}
+
+– .icon-ellipse {}
+
+
+
+.recipe-desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
+
+.made-recipe-list li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+
+
+
 
 .pop-up {
   position: absolute;
