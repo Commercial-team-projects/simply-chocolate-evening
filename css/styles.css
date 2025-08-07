@@ -400,26 +400,24 @@ img {
 }
 
 
-.recipe-desc {
-  position: relative;
-}
+.recipe-desc {}
 
-.ellipse::before {
+.recipe-list::before {
   content: "";
-  /*  display: block; */
   background-color: #4C4C4C;
   border-radius: 50%;
   border: 1px solid #ECEDED;
   min-height: 8px;
   min-width: 8px;
-  position: absolute;
-  top: 5px;
-  left: -12px;
-
 }
 
-– .icon-ellipse {}
 
+.recipe-list {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+
+}
 
 
 .recipe-desc {
@@ -428,6 +426,7 @@ img {
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
+
 
 .made-recipe-list li:not(:last-child) {
   margin-bottom: 24px;
