@@ -98,14 +98,14 @@
       </section>
       <!-- Section 2 -->
       <section class="benefits">
-        <h2 class="benefits-title visually-hidden">Benefits</h2>
-        <div class="benefits-container">
+        <div class="benefits-container container">
+          <h2 class="benefits-title visually-hidden">Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
               <span class="ben-line"></span>
               <div class="benefits-item-icon">
                 <svg class="ben-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-chokolate"></use>
+                  <use href="./images/icons.svg#icon-bar"></use>
                 </svg>
               </div>
               <h3 class="benefits-item-title">Unsurpassed taste</h3>
@@ -120,7 +120,7 @@
               <span class="ben-line"></span>
               <div class="benefits-item-icon">
                 <svg class="ben-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-dolar"></use>
+                  <use href="./images/icons.svg#icon-coin"></use>
                 </svg>
               </div>
               <h3 class="benefits-item-title">Affordable price</h3>
@@ -171,6 +171,21 @@
                 height="160"
               />
               <h3 class="taste-list-label">MILK CHOCOLATE</h3>
+
+              <div class="pop-up">
+                <h4 class="pop-up-title">Milk chocolate</h4>
+                <ul class="pop-up-btn-list">
+                  <li class="pop-up-btn">chocolate</li>
+                  <li class="pop-up-btn">the benefits</li>
+                </ul>
+                <p class="pop-up-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
               <img
@@ -180,6 +195,21 @@
                 height="160"
               />
               <h3 class="taste-list-label">MILK</h3>
+              <div class="pop-up">
+                <h4 class="pop-up-title">Milk</h4>
+                <ul class="pop-up-btn-list">
+                  <li class="pop-up-btn">milk</li>
+                  <li class="pop-up-btn">the benefits</li>
+                </ul>
+                <p class="pop-up-text">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
               <img
@@ -189,6 +219,21 @@
                 height="160"
               />
               <h3 class="taste-list-label">NUTS</h3>
+              <div class="pop-up">
+                <h4 class="pop-up-title">Nuts</h4>
+                <ul class="pop-up-btn-list">
+                  <li class="pop-up-btn">nuts</li>
+                  <li class="pop-up-btn">the benefits</li>
+                </ul>
+                <p class="pop-up-text">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
             </li>
             <li class="taste-list-item">
               <img
@@ -198,6 +243,21 @@
                 height="160"
               />
               <h3 class="taste-list-label">SEMI - SWEET CHOCOLATE</h3>
+              <div class="pop-up">
+                <h4 class="pop-up-title">Semi - sweet chocolate</h4>
+                <ul class="pop-up-btn-list">
+                  <li class="pop-up-btn">sweet chocolate</li>
+                  <li class="pop-up-btn">the benefits</li>
+                </ul>
+                <p class="pop-up-text">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -348,5 +408,102 @@
         </div>
       </div>
     </footer>
+    <!-------------------------------POP_UP--------------------------------->
+    <div class="popup-overlay">
+      <div class="popup">
+        <button class="popup-close-btn" type="button">
+          <svg class="popup-btn-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="popup-title">
+          Leave a review <br />
+          about
+          <span class="popup-title-acent">our chocolate</span>
+        </p>
+        <form class="popup-form">
+          <div class="popup-form-content">
+            <label class="popup-label" for="user-name">Name</label>
+            <div class="popup-form-input">
+              <input
+                class="popup-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                required
+              />
+              <svg class="popup-input-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="popup-form-content">
+            <label class="popup-label" for="email">Email</label>
+            <div class="popup-form-input">
+              <input
+                class="popup-input"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <svg class="popup-input-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="popup-form-content">
+            <label class="popup-label" for="phone">Phone number</label>
+            <div class="popup-form-input">
+              <input
+                class="popup-input"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+              <svg class="popup-input-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="popup-form-content popup-comment">
+            <label class="popup-label" for="user-comment">Comment</label>
+            <textarea
+              class="popup-user-comment"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <div class="popup-checkbox-content">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+
+            <label class="popup-label-checkbox" for="user-privacy">
+              <span class="checkbox-custom-icon">
+                <svg class="checkbox-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-yes"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="policy" href="policy">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="button" class="popup-btn-send">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
