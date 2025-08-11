@@ -299,7 +299,11 @@ img {
   color: var(--black);
   width: 411px;
   margin: 0 auto;
-  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.taste-title .accent {
+  color: var(--orange);
 }
 
 .taste-description {
@@ -310,7 +314,7 @@ img {
   color: var(--black);
   width: 486px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .taste-list {
@@ -331,7 +335,7 @@ img {
 }
 
 .taste-list-label {
-  padding-top: 36px;
+  margin-top: 36px;
 }
 
 .taste-list-item:first-child {
@@ -445,7 +449,6 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--color-white);
-
   padding: 20px;
 }
 
@@ -491,6 +494,7 @@ img {
   color: var(--black);
   width: 230px;
   height: 140px;
+  overflow-y: auto;
 }
 
 .taste-list-item:hover .pop-up {
@@ -849,7 +853,7 @@ img {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
