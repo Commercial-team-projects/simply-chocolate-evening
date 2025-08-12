@@ -698,6 +698,11 @@ img {
   padding: 14px 24px;
   width: 313px;
   margin-right: 8px;
+  outline: none;
+  color: var(--white);
+
+  font-size: 18px;
+  letter-spacing: -0.02em;
 
   transition: border-color 500ms ease;
 }
@@ -707,8 +712,6 @@ img {
 }
 
 .subscribe-input::placeholder {
-  font-size: 18px;
-  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.3);
 }
 
