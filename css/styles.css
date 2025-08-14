@@ -5,21 +5,14 @@
   --font-family: "Montserrat", sans-serif;
 
   /*colors*/
-  --bg-hero: #fcf1e0;
-  --color-black: #111111;
-  --color-violet: #1e1823;
-  --color-orange: #fd9222;
-  --color-cream: #fcf1e0;
-  --color-white: #fafafa;
-  --color-body-white: #e9e9e9;
-}
-
-:root {
+  --body-white: #fafafa;
   --white: #ffffff;
   --orange: #fd9222;
-  --light-orange: #fcf1e0;
+  --cream: #fcf1e0;
   --black: #111111;
   --violet: #1e1823;
+  --list-mark-fill: #4c4c4c;
+  --list-mark-stroke: #eceded;
 }
 /* #endregion */
 
@@ -32,8 +25,8 @@
 
 body {
   font-family: var(--font-family);
-  color: #111111;
-  background-color: var(--color-white);
+  color: var(--black);
+  background-color: var(--body-white);
   margin: 0 auto;
 }
 
@@ -97,7 +90,6 @@ img {
 
 .logo .icon {
   margin-left: 4px;
-  /* fill: #fcf1e0; */
 }
 /* #endregion */
 
@@ -154,11 +146,11 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: #fd9222;
+  color: var(--orange);
 }
 
 .title-part {
-  color: #111;
+  color: var(--black);
 }
 
 .list-avatar {
@@ -170,7 +162,7 @@ img {
   font-size: 18px;
   line-height: 1.33333;
   text-align: center;
-  color: #111;
+  color: var(--black);
 }
 
 .review-item {
@@ -185,13 +177,13 @@ img {
 .review-button {
   font-weight: 600;
   font-size: 18px;
-  color: #111;
+  color: var(--black);
 }
 /* #endregion */
 
 /* #region Section 1 Hero */
 .hero-container {
-  background-color: var(--bg-hero);
+  background-color: var(--cream);
   background-image: url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   border-radius: 32px;
@@ -238,7 +230,7 @@ img {
 .btn-buy:hover,
 .btn-buy:focus {
   color: var(--orange);
-  background-color: var(--bg-hero);
+  background-color: var(--cream);
 }
 
 .btn-made {
@@ -307,7 +299,7 @@ img {
 
 /* #region Section 2 Benefits */
 .benefits {
-  background-color: var(--color-violet);
+  background-color: var(--violet);
   margin-top: 85px;
 }
 
@@ -357,7 +349,7 @@ img {
 .benefits-item-title {
   font-weight: 600;
   font-size: 18px;
-  color: var(--color-white);
+  color: var(--white);
   margin-bottom: 18px;
 }
 
@@ -502,9 +494,9 @@ img {
 
 .recipe-list::before {
   content: "";
-  background-color: #4c4c4c;
+  background-color: var(--list-mark-fill);
   border-radius: 50%;
-  border: 1px solid #eceded;
+  border: 1px solid var(--list-mark-stroke);
   min-height: 8px;
   min-width: 8px;
 }
@@ -534,7 +526,7 @@ img {
   left: 0;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--color-white);
+  background-color: var(--white);
   padding: 20px;
 }
 
@@ -548,7 +540,7 @@ img {
   border-radius: 35px;
   padding: 6px 16px;
   height: 24px;
-  background-color: var(--color-orange);
+  background-color: var(--orange);
   font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
@@ -557,7 +549,7 @@ img {
 }
 
 .pop-up-btn:nth-child(2) {
-  background-color: var(--color-white);
+  background-color: var(--body-white);
   border: 1px solid var(--orange);
   color: var(--black);
   padding: 6px 16px;
@@ -593,7 +585,6 @@ img {
 /* #endregion */
 
 /* #region section 5 Chocolate is loved */
-
 .loved-container {
   margin-top: 100px;
 }
@@ -605,12 +596,12 @@ img {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: #fd9222;
+  color: var(--orange);
   margin-bottom: 90px;
 }
 
 .loved-title-part {
-  color: #111;
+  color: var(--black);
 }
 
 .loved-list {
@@ -637,7 +628,7 @@ img {
   width: 360px;
   height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
-  background: #fff;
+  background: var(--white);
   margin-bottom: 50px;
 }
 
@@ -645,7 +636,7 @@ img {
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
-  color: #111;
+  color: var(--black);
   margin-bottom: 24px;
 }
 
@@ -667,7 +658,7 @@ img {
   padding: 14px 40px;
   width: 222px;
   height: 50px;
-  background-color: #fafafa;
+  background-color: var(--body-white);
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
@@ -798,7 +789,7 @@ img {
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background-color: var(--light-orange);
+  background-color: var(--cream);
   color: var(--orange);
 }
 /* #endregion */
@@ -835,7 +826,7 @@ img {
   transform: translate(-50%, -50%);
   width: 311px;
   min-height: 619px;
-  background-color: var(--color-white);
+  background-color: var(--body-white);
   border-radius: 15px;
   padding: 32px 24px;
 }
@@ -862,7 +853,7 @@ img {
 
 .popup-btn-icon:hover,
 .popup-btn-icon:focus {
-  stroke: var(--color-orange);
+  stroke: var(--orange);
 }
 
 .popup-title {
@@ -920,7 +911,7 @@ img {
 
 .popup-input:hover + .popup-input-icon,
 .popup-input:focus + .popup-input-icon {
-  stroke: var(--color-orange);
+  stroke: var(--orange);
 }
 
 .popup-input:active {
@@ -940,7 +931,7 @@ img {
 }
 
 .popup-input:hover + .popup-input-icon {
-  stroke: var(--color-orange);
+  stroke: var(--orange);
 }
 
 /* .popup-comment {
@@ -986,7 +977,7 @@ img {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
-  fill: var(--color-white);
+  fill: var(--body-white);
 }
 
 .popup-label-checkbox {
@@ -1026,7 +1017,7 @@ img {
   padding: 12px 28px;
   width: 93px;
   height: 41px;
-  background-color: var(--color-orange);
+  background-color: var(--orange);
   border: none;
   margin-top: 32px;
 }
