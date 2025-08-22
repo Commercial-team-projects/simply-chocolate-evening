@@ -14,6 +14,7 @@
   --list-mark-fill: #4c4c4c;
   --list-mark-stroke: #eceded;
 }
+
 /* #endregion */
 
 /* #region Global */
@@ -84,18 +85,19 @@ img {
   text-transform: uppercase;
 }
 
-.logo > .accent {
+.logo>.accent {
   font-style: italic;
 }
 
 .logo .icon {
   margin-left: 4px;
 }
+
 /* #endregion */
 
 /* #region Header */
 
-.header-section > .container {
+.header-section>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,6 +181,7 @@ img {
   font-size: 18px;
   color: var(--black);
 }
+
 /* #endregion */
 
 /* #region Section 1 Hero */
@@ -295,6 +298,7 @@ img {
 .hero-scroll:focus .hero-icon-arrow {
   fill: var(--white);
 }
+
 /* #endregion */
 
 /* #region Section 2 Benefits */
@@ -355,7 +359,7 @@ img {
 
 .benefits-item-text {
   font-size: 14px;
-  letter-spacing: 0em;
+  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -367,6 +371,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
 }
+
 /* #endregion */
 
 /* #region Section 3 Taste */
@@ -441,11 +446,11 @@ img {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+
 /* #endregion */
 
 /* #region Section 4 Made */
-.made-section {
-}
+.made-section {}
 
 .made-title {
   font-weight: 600;
@@ -470,8 +475,7 @@ img {
   margin-bottom: 100px;
 }
 
-.made-image-container {
-}
+.made-image-container {}
 
 .made-recipe-container {
   width: 516px;
@@ -489,8 +493,7 @@ img {
   margin-bottom: 28px;
 }
 
-.recipe-desc {
-}
+.recipe-desc {}
 
 .recipe-list::before {
   content: "";
@@ -582,6 +585,7 @@ img {
 .taste-list-item:hover {
   border: none;
 }
+
 /* #endregion */
 
 /* #region section 5 Chocolate is loved */
@@ -673,6 +677,7 @@ img {
   background-color: var(--orange);
   border: none;
 }
+
 /* #endregion section 5 Chocolate is loved */
 
 /* #region Footer */
@@ -792,6 +797,7 @@ img {
   background-color: var(--cream);
   color: var(--orange);
 }
+
 /* #endregion */
 
 /* #region POP-UP */
@@ -909,8 +915,8 @@ img {
   border: 1.5px solid var(--orange);
 }
 
-.popup-input:hover + .popup-input-icon,
-.popup-input:focus + .popup-input-icon {
+.popup-input:hover+.popup-input-icon,
+.popup-input:focus+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -930,7 +936,7 @@ img {
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.popup-input:hover + .popup-input-icon {
+.popup-input:hover+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -973,7 +979,7 @@ img {
   height: 20px;
 }
 
-.visually-hidden:checked + .popup-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked+.popup-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
