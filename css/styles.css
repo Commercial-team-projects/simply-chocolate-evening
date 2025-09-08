@@ -319,7 +319,7 @@ button {
 /* #region Section 2 Benefits */
 .benefits {
   background-color: var(--violet);
-  margin-top: 85px;
+  margin-bottom: 77px;
 }
 
 .benefits-container {
