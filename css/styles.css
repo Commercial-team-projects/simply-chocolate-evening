@@ -29,6 +29,7 @@ body {
   color: var(--black);
   background-color: var(--body-white);
   margin: 0 auto;
+  line-height: 1.21429;
 }
 
 .container {
@@ -206,7 +207,6 @@ button {
   max-width: 484px;
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21429;
   letter-spacing: -0.03em;
   color: var(--white);
   margin-bottom: 32px;
@@ -722,9 +722,7 @@ button {
 .footer-slogan {
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.21;
   letter-spacing: -0.02em;
-
   max-width: 300px;
 }
 
