@@ -48,11 +48,6 @@ body {
     width: 335px;
   }
 }
-@media (max-width: 374px) {
-  .container {
-    /* width: 335px; */
-  }
-}
 
 h1,
 h2,
