@@ -96,7 +96,7 @@ button {
   text-transform: uppercase;
 }
 
-.logo > .accent {
+.logo>.accent {
   font-style: italic;
 }
 
@@ -108,7 +108,7 @@ button {
 
 /* #region Header */
 
-.header-section > .container {
+.header-section>.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -350,12 +350,13 @@ button {
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .benefits-list-item {
   position: relative;
-  width: calc((100% - 88px) / 3);
+  width: 326px;
+  padding-right: 18px;
 }
 
 .benefits-item-icon {
@@ -377,6 +378,8 @@ button {
 }
 
 .benefits-item-text {
+  width: 100%;
+  min-width: 308px;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
@@ -389,6 +392,46 @@ button {
   transform: translateY(-50%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
+}
+
+@media (max-width: 1199px) {
+
+  .benefits-list {
+    min-width: 704px;
+    flex-wrap: wrap;
+    gap: 32px;
+
+  }
+
+  .benefits-list-item {
+    width: 336px;
+    padding-right: 28px;
+  }
+
+  .ben-line {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .benefits-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .benefits-list {
+    width: 100%;
+    min-width: 336px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .benefits-list-item {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 /* #endregion */
@@ -537,8 +580,7 @@ button {
 /* #endregion */
 
 /* #region Section 4 Made */
-.made-section {
-}
+.made-section {}
 
 .made-title {
   font-weight: 600;
@@ -563,8 +605,7 @@ button {
   margin-bottom: 100px;
 }
 
-.made-image-container {
-}
+.made-image-container {}
 
 .made-recipe-container {
   width: 516px;
@@ -582,8 +623,7 @@ button {
   margin-bottom: 28px;
 }
 
-.recipe-desc {
-}
+.recipe-desc {}
 
 .recipe-list::before {
   content: "";
@@ -683,11 +723,9 @@ button {
   padding-bottom: 100px;
 }
 
-.loved-container {
-}
+.loved-container {}
 
-.loved-container {
-}
+.loved-container {}
 
 .loved-title {
   font-weight: 600;
@@ -1017,8 +1055,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.popup-input:hover + .popup-input-icon,
-.popup-input:focus + .popup-input-icon {
+.popup-input:hover+.popup-input-icon,
+.popup-input:focus+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1038,7 +1076,7 @@ button {
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.popup-input:hover + .popup-input-icon {
+.popup-input:hover+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1081,7 +1119,7 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked + .popup-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked+.popup-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
