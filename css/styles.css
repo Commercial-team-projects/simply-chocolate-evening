@@ -564,13 +564,16 @@ button {
   gap: 20px;
 }
 
-.made-image-container img {
+.made-image-container {
+}
+
+.made-img{
   border-radius: 15px;
 }
 
 .made-recipe-container {
   width: 516px;
-  height: 400;
+  height: 400px;
   background-color: var(--white);
   padding: 32px 59px 32px 32px;
   border-radius: 15px;
