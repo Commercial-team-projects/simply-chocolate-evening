@@ -565,7 +565,7 @@ button {
 }
 
 .made-image-container img {
-  background-repeat: 15px;
+  border-radius: 15px;
 }
 
 .made-recipe-container {
