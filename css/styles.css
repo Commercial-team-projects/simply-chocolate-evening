@@ -537,7 +537,9 @@ button {
 /* #endregion */
 
 /* #region Section 4 Made */
-.made-section {}
+.made-section {
+  padding-bottom: 100px;
+}
 
 .made-title {
   font-weight: 600;
@@ -548,7 +550,9 @@ button {
   text-align: center;
   color: var(--black);
   margin-bottom: 50px;
+
 }
+
 
 .made-inline {
   color: var(--orange);
@@ -558,11 +562,11 @@ button {
   display: flex;
   flex-direction: row;
   gap: 20px;
-
-  margin-bottom: 100px;
 }
 
-.made-image-container {}
+.made-image-container img {
+  background-repeat: 15px;
+}
 
 .made-recipe-container {
   width: 516px;
@@ -587,14 +591,14 @@ button {
   background-color: var(--list-mark-fill);
   border-radius: 50%;
   border: 1px solid var(--list-mark-stroke);
-  min-height: 9px;
-  min-width: 9px;
+  min-height: 8px;
+  min-width: 8px;
 }
 
 .recipe-list {
   display: flex;
   align-items: baseline;
-  gap: 9px;
+  gap: 8px;
 }
 
 .recipe-desc {
