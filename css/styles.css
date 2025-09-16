@@ -197,7 +197,7 @@ button {
   justify-content: center;
 
   background-color: transparent;
-  box-shadow: none;
+  border: none;
 }
 
 .close-btn .btn-icon {
@@ -206,12 +206,15 @@ button {
 }
 
 .burger-btn {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
   width: 28px;
   height: 28px;
+
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-menu.is-open {
@@ -233,6 +236,10 @@ button {
 
   .header-section .wrapper {
     display: none;
+  }
+
+  .burger-btn {
+    display: flex;
   }
 }
 /* #endregion */
