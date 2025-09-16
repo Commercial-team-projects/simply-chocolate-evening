@@ -63,6 +63,12 @@
             </li>
           </ul>
         </div>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -523,5 +529,26 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu">
+      <button class="close-btn" type="button">
+        <svg class="btn-icon" width="14" height="14">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+    <script>
+      const burgerBtn = document.querySelector(".burger-btn");
+      const closeBtn = document.querySelector(".close-btn");
+      const mobileMenu = document.querySelector(".mobile-menu");
+
+      burgerBtn.addEventListener("click", (event) => {
+        mobileMenu.classList.add("is-open");
+      });
+
+      closeBtn.addEventListener("click", (event) => {
+        mobileMenu.classList.remove("is-open");
+      });
+    </script>
   </body>
 </html>
