@@ -265,49 +265,6 @@ button {
 }
 /* #endregion */
 
-/* code below???? */
-
-.review-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--orange);
-}
-
-.title-part {
-  color: var(--black);
-}
-
-.list-avatar {
-  border-radius: 100%;
-}
-
-.review-name {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.33333;
-  text-align: center;
-  color: var(--black);
-}
-
-.review-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: rgba(17, 17, 17, 0.7);
-}
-
-.review-button {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--black);
-}
-
 /* #region Section 1 Hero */
 .hero {
   padding-bottom: 85px;
