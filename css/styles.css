@@ -350,12 +350,13 @@ button {
 
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .benefits-list-item {
   position: relative;
-  width: calc((100% - 88px) / 3);
+  width: 326px;
+  padding-right: 18px;
 }
 
 .benefits-item-icon {
@@ -377,6 +378,8 @@ button {
 }
 
 .benefits-item-text {
+  width: 100%;
+  min-width: 308px;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
@@ -389,6 +392,42 @@ button {
   transform: translateY(-50%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
+}
+
+@media (max-width: 1199px) {
+
+  .benefits-list {
+    min-width: 704px;
+    flex-wrap: wrap;
+    gap: 32px;
+
+  }
+
+  .benefits-list-item {
+    width: 336px;
+    padding-right: 28px;
+  }
+
+  .ben-line {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .benefits-container {
+    padding: 20px;
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .benefits-list {
+    width: 100%;
+    min-width: 336px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
 }
 
 /* #endregion */
@@ -1006,8 +1045,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.modal-input:hover+.modal-input-icon,
-.modal-input:focus+.modal-input-icon {
+.popup-input:hover+.popup-input-icon,
+.popup-input:focus+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1029,7 +1068,7 @@ button {
   height: 24px;
 }
 
-.modal-input:hover+.modal-input-icon {
+.popup-input:hover+.popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1068,7 +1107,7 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked+.modal-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked+.popup-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
