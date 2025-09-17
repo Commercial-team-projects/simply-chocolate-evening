@@ -180,6 +180,10 @@ button {
   background-color: transparent;
 }
 
+.burger-icon {
+  stroke: var(--black);
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
