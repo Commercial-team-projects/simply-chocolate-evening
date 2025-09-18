@@ -699,6 +699,7 @@ button {
 
 /* #region Section 4 Made */
 .made-section {
+  padding-bottom: 100px;
 }
 
 .made-title {
@@ -710,7 +711,9 @@ button {
   text-align: center;
   color: var(--black);
   margin-bottom: 50px;
+
 }
+
 
 .made-inline {
   color: var(--orange);
@@ -719,21 +722,26 @@ button {
 .made-container {
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 20px;
-
-  margin-bottom: 100px;
 }
 
 .made-image-container {
 }
 
+.made-img{
+  border-radius: 15px;
+}
+
 .made-recipe-container {
   width: 516px;
-  height: 400;
   background-color: var(--white);
   padding: 32px 59px 32px 32px;
   border-radius: 15px;
+ 
 }
+
+
 
 .made-recipe-title {
   font-weight: 600;
@@ -744,6 +752,10 @@ button {
 }
 
 .recipe-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .recipe-list::before {
@@ -751,22 +763,17 @@ button {
   background-color: var(--list-mark-fill);
   border-radius: 50%;
   border: 1px solid var(--list-mark-stroke);
-  min-height: 9px;
-  min-width: 9px;
+  min-height: 8px;
+  min-width: 8px;
 }
 
 .recipe-list {
   display: flex;
   align-items: baseline;
-  gap: 9px;
+  gap: 8px;
+
 }
 
-.recipe-desc {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
 
 .made-recipe-list li:not(:last-child) {
   margin-bottom: 24px;
