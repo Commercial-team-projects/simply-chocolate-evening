@@ -96,7 +96,7 @@ button {
   text-transform: uppercase;
 }
 
-.logo>.accent {
+.logo > .accent {
   font-style: italic;
 }
 
@@ -108,7 +108,7 @@ button {
 
 /* #region Header */
 
-.header-section>.container {
+.header-section > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -323,6 +323,58 @@ button {
 .hero-scroll:focus .hero-icon-arrow {
   fill: var(--white);
 }
+@media (max-width: 1199px) {
+  .hero-container {
+    background-image: url(../images/tab-hero-bg.jpg);
+  }
+  .hero {
+    padding-bottom: 40px;
+  }
+  .hero-box {
+    padding-top: 630px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-container {
+    background-image: url(../images/mob-hero-bg.jpg);
+    padding: 20px;
+  }
+  .hero-box {
+    padding-top: 375px;
+  }
+  .hero-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .hero-btn {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .btn-buy {
+    padding: 12px 28px;
+    min-width: 120px;
+    line-height: inherit;
+  }
+  .btn-made {
+    padding: 11px 27px;
+    min-width: 159px;
+    display: block;
+  }
+  .hero-scroll {
+    margin-left: 0;
+    align-items: center;
+    gap: 14px;
+    align-self: baseline;
+  }
+  .hero-scroll-text {
+    font-size: 12px;
+    line-height: 1.16667;
+  }
+  .hero-scroll .hero-scroll-link {
+    width: 28px;
+    height: 28px;
+  }
+}
 
 /* #endregion */
 
@@ -395,12 +447,10 @@ button {
 }
 
 @media (max-width: 1199px) {
-
   .benefits-list {
     min-width: 704px;
     flex-wrap: wrap;
     gap: 32px;
-
   }
 
   .benefits-list-item {
@@ -414,7 +464,6 @@ button {
 }
 
 @media (max-width: 767px) {
-
   .benefits-container {
     padding: 20px;
     width: 100%;
@@ -427,7 +476,6 @@ button {
     flex-direction: column;
     gap: 20px;
   }
-
 }
 
 /* #endregion */
@@ -600,6 +648,7 @@ button {
 .made-container {
   display: flex;
   flex-direction: row;
+  align-items: start;
   gap: 20px;
 }
 
@@ -612,11 +661,13 @@ button {
 
 .made-recipe-container {
   width: 516px;
-  height: 400px;
   background-color: var(--white);
   padding: 32px 59px 32px 32px;
   border-radius: 15px;
+ 
 }
+
+
 
 .made-recipe-title {
   font-weight: 600;
@@ -626,7 +677,12 @@ button {
   margin-bottom: 28px;
 }
 
-.recipe-desc {}
+.recipe-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
 
 .recipe-list::before {
   content: "";
@@ -641,14 +697,9 @@ button {
   display: flex;
   align-items: baseline;
   gap: 8px;
+
 }
 
-.recipe-desc {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-}
 
 .made-recipe-list li:not(:last-child) {
   margin-bottom: 24px;
@@ -726,9 +777,11 @@ button {
   padding-bottom: 100px;
 }
 
-.loved-container {}
+.loved-container {
+}
 
-.loved-container {}
+.loved-container {
+}
 
 .loved-title {
   font-weight: 600;
@@ -1052,8 +1105,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.popup-input:hover+.popup-input-icon,
-.popup-input:focus+.popup-input-icon {
+.popup-input:hover + .popup-input-icon,
+.popup-input:focus + .popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1069,13 +1122,13 @@ button {
   stroke-width: 1.5px;
   stroke: var(--black);
   fill: none;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  ;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 24px;
   height: 24px;
 }
 
-.popup-input:hover+.popup-input-icon {
+.popup-input:hover + .popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1114,7 +1167,7 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked+.popup-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked + .popup-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
@@ -1205,8 +1258,8 @@ button {
     stroke-width: 1.5px;
     stroke: var(--black);
     fill: none;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    ;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 17px;
     height: 17px;
   }
