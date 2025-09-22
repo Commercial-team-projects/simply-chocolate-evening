@@ -972,10 +972,6 @@ button {
     margin-bottom: 50px;
   }
 
-  /* .last-indicator {
-    display: none;
-  } */
-
   .loved-dot {
     width: 13px;
     height: 13px;
@@ -1012,10 +1008,6 @@ button {
   .loved-indicators {
     margin-bottom: 32px;
   }
-
-  /* .last-indicator {
-    display: inline;
-  } */
 
   .loved-button {
     padding: 12px 28px;
