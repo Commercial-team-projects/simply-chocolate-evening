@@ -634,7 +634,7 @@ button {
 
 .pop-up {
   position: absolute;
-  height: 100%; 
+  height: 100%;
   top: 0;
   left: 0;
   transform: translateY(101%);
@@ -721,7 +721,7 @@ button {
   }
 
   .taste-list-item:nth-child(3) {
-     order: 4;
+    order: 4;
   }
 
   .taste-list-item img {
@@ -730,7 +730,7 @@ button {
 }
 
 @media (max-width: 767px) {
- .taste-title {
+  .taste-title {
     font-size: 20px;
     width: 283px;
     margin-bottom: 24px;
@@ -741,24 +741,23 @@ button {
     margin-bottom: 32px;
   }
 
-   .taste-list {
+  .taste-list {
     flex-direction: column;
     gap: 20px;
   }
 
-   .taste-list-item {
-     min-width: 335px;
+  .taste-list-item {
+    min-width: 335px;
   }
 
-   .taste-list-item:nth-child(2) {
+  .taste-list-item:nth-child(2) {
     order: 0;
   }
-    
-   .taste-list-item:nth-child(3) {
-     order: 0;
+
+  .taste-list-item:nth-child(3) {
+    order: 0;
   }
 }
-
 
 /* #endregion */
 
@@ -776,9 +775,7 @@ button {
   text-align: center;
   color: var(--black);
   margin-bottom: 50px;
-
 }
-
 
 .made-inline {
   color: var(--orange);
@@ -794,7 +791,7 @@ button {
 .made-image-container {
 }
 
-.made-img{
+.made-img {
   border-radius: 15px;
 }
 
@@ -803,10 +800,7 @@ button {
   background-color: var(--white);
   padding: 32px 59px 32px 32px;
   border-radius: 15px;
- 
 }
-
-
 
 .made-recipe-title {
   font-weight: 600;
@@ -836,9 +830,7 @@ button {
   display: flex;
   align-items: baseline;
   gap: 8px;
-
 }
-
 
 .made-recipe-list li:not(:last-child) {
   margin-bottom: 24px;
@@ -851,12 +843,6 @@ button {
   padding-bottom: 100px;
 }
 
-.loved-container {
-}
-
-.loved-container {
-}
-
 .loved-title {
   font-weight: 600;
   font-size: 24px;
@@ -865,7 +851,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--orange);
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .loved-title-part {
@@ -879,9 +865,14 @@ button {
   margin-bottom: 50px;
 }
 
-.loved-list-item {
-  width: calc((100% - 56px) / 3);
+.box-wrapper {
   position: relative;
+  height: 242px;
+  padding-top: 42px;
+}
+
+.loved-list-item {
+  flex-basis: calc((100% - 56px) / 3);
 }
 
 .loved-list-item-avatar {
@@ -895,12 +886,12 @@ button {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   width: 360px;
-  height: 200px;
+  min-height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: var(--white);
 }
 
-.lived-list-item-name {
+.loved-list-item-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -941,6 +932,89 @@ button {
   color: var(--white);
   background-color: var(--orange);
   border: none;
+}
+
+@media (max-width: 1199px) {
+  .loved-section {
+    padding-bottom: 80px;
+  }
+
+  .loved-list {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .loved-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .loved-list-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    scroll-snap-align: start;
+  }
+
+  .loved-list-item-box {
+    padding: 56px 16px 24px 16px;
+    width: 344px;
+  }
+
+  .loved-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+
+  .loved-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 17, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .loved-dot.active {
+    width: 28px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: var(--orange);
+  }
+}
+
+@media (max-width: 767px) {
+  .loved-section {
+    padding-bottom: 60px;
+  }
+
+  .loved-title {
+    margin-bottom: 32px;
+  }
+
+  .loved-list-item {
+    flex-basis: 100%;
+  }
+
+  .loved-list-item-box {
+    width: 335px;
+  }
+
+  .loved-indicators {
+    margin-bottom: 32px;
+  }
+
+  .loved-button {
+    padding: 12px 28px;
+    width: 165px;
+    height: 41px;
+    font-size: 14px;
+  }
 }
 
 /* #endregion section 5 Chocolate is loved */
