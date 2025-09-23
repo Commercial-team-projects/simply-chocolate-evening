@@ -869,6 +869,10 @@ button {
     width: 614px;
   }
 
+  .made-recipe-list li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
 }
 
 /*! Mobile Adaptive  */
@@ -955,6 +959,10 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .made-recipe-list li:not(:last-child) {
+    margin-bottom: 18px;
   }
 }
 
