@@ -33,3 +33,27 @@ mMenuInnerLinks.addEventListener("click", (event) => {
   }
   mMenuLayer.classList.remove("is-open");
 });
+
+const track = document.querySelector(".loved-list");
+const dots = document.querySelectorAll(".loved-dot");
+const items = document.querySelectorAll(".loved-list-item");
+
+function updateActiveDot() {
+  const scrollLeft = track.scrollLeft;
+  const maxScrollLeft = track.scrollWidth - track.clientWidth;
+  const itemWidth = items[0].offsetWidth + 16;
+
+  let index = Math.round(scrollLeft / itemWidth);
+
+  if (scrollLeft >= maxScrollLeft - 1) {
+    index = dots.length - 1;
+  }
+
+  dots.forEach((dot) => dot.classList.remove("active"));
+  if (dots[index]) dots[index].classList.add("active");
+}
+
+track.addEventListener("scroll", () => {
+window.requestAnimationFrame(updateActiveDot);
+});
+window.addEventListener("resize", updateActiveDot);

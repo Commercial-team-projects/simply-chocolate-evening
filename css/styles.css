@@ -610,8 +610,9 @@ button {
   overflow: hidden;
   padding: 28px 36px 28px 28px;
   border-radius: 15px;
-  width: 100%;
-  height: 270px;
+  min-width: 270px;
+  min-height: 270px;
+  background-color: var(--white);
 }
 
 .taste-list-label {
@@ -626,6 +627,7 @@ button {
 .taste-list-item:nth-child(3) {
   background-color: var(--violet);
   color: var(--white);
+  /* border: var(--body-white); */
 }
 
 .taste-list-item:nth-child(even) {
@@ -644,14 +646,15 @@ button {
 
 .pop-up {
   position: absolute;
-  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(101%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--white);
   padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .pop-up-btn-list {
@@ -673,7 +676,7 @@ button {
 }
 
 .pop-up-btn:nth-child(2) {
-  background-color: var(--body-white);
+  background-color: var(--white);
   border: 1px solid var(--orange);
   color: var(--black);
   padding: 6px 16px;
@@ -691,12 +694,10 @@ button {
 
 .pop-up-text {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--black);
-  width: 230px;
-  height: 162px;
-  overflow-y: auto;
+  min-width: 230px;
 }
 
 .taste-list-item:hover .pop-up {
@@ -704,7 +705,70 @@ button {
 }
 
 .taste-list-item:hover {
-  border: none;
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  transition: background-color 100ms;
+  transition-delay: 0.5s;
+}
+
+@media (max-width: 1199px) {
+  .taste-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .taste-list-item {
+    min-width: 336px;
+    padding: 28px;
+  }
+
+  .taste-list-label {
+    margin-top: 25px;
+  }
+
+  .taste-list-item:nth-child(2) {
+    order: 3;
+  }
+
+  .taste-list-item:nth-child(3) {
+    order: 4;
+  }
+
+  .taste-list-item img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .taste-title {
+    font-size: 20px;
+    width: 283px;
+    margin-bottom: 24px;
+  }
+
+  .taste-description {
+    width: 335px;
+    margin-bottom: 32px;
+  }
+
+  .taste-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .taste-list-item {
+    min-width: 335px;
+  }
+
+  .taste-list-item:nth-child(2) {
+    order: 0;
+  }
+
+  .taste-list-item:nth-child(3) {
+    order: 0;
+  }
 }
 
 /* #endregion */
@@ -721,13 +785,12 @@ button {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
+
   text-align: center;
+  text-transform: uppercase;
   color: var(--black);
   margin-bottom: 50px;
-
 }
-
 
 .made-inline {
   color: var(--orange);
@@ -735,22 +798,22 @@ button {
 
 .made-container {
   display: flex;
+  align-items: stretch;
   flex-direction: row;
-  align-items: start;
   gap: 20px;
 }
 
-.made-image-container {}
+.made-img {
+  border-radius: 15px;
+}
 
 .made-recipe-container {
   width: 516px;
   background-color: var(--white);
   padding: 32px 59px 32px 32px;
   border-radius: 15px;
-
+ 
 }
-
-
 
 .made-recipe-title {
   font-weight: 600;
@@ -782,77 +845,130 @@ button {
   display: flex;
   align-items: baseline;
   gap: 8px;
-
 }
-
 
 .made-recipe-list li:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.pop-up {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--white);
-  padding: 20px;
+.made-thumb button {
+  display: none;
 }
 
-.pop-up-btn-list {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 14px;
+/*! Tablet Adaptive */
+
+@media (max-width: 1199px) {
+
+  .made-section {
+    padding-bottom: 80px;
+  }
+
+  .made-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .made-recipe-container {
+    padding-right: 102px;
+    width: 614px;
+  }
+
+  .made-recipe-list li:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
 }
 
-.pop-up-btn {
-  border-radius: 35px;
-  padding: 6px 16px;
-  height: 24px;
-  background-color: var(--orange);
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.2;
-  color: var(--white);
-  text-align: center;
-}
+/*! Mobile Adaptive  */
+@media (max-width: 767px) {
 
-.pop-up-btn:nth-child(2) {
-  background-color: var(--body-white);
-  border: 1px solid var(--orange);
-  color: var(--black);
-  padding: 6px 16px;
-  height: 24px;
-}
+  .made-section {
+    padding-bottom: 60px;
+  }
 
-.pop-up-title {
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  color: var(--black);
-}
+  .made-thumb button {
+    display: unset;
+  }
 
-.pop-up-text {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  color: var(--black);
-  width: 230px;
-  height: 140px;
-  overflow-y: auto;
-}
+  .icon-play-circle {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px var(--white) solid;
+    background-color: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
 
-.taste-list-item:hover .pop-up {
-  transform: translateY(0%);
-}
+  .icon-triangle-btn {
+    position: absolute;
+    display: unset;
+    top: 10px;
+    left: 12px;
+    fill: var(--white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.taste-list-item:hover {
-  border: none;
+  .icon-play-circle:focus svg,
+  .icon-play-circle:hover svg {
+    fill: var(--orange);
+  }
+
+  .icon-play-circle:focus,
+  .icon-play-circle:hover {
+    border: 1px var(--orange) solid;
+  }
+
+
+  .made-image-container {
+    position: relative;
+  }
+
+  .icon-play-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+    background-color: transparent;
+    border: none;
+
+  }
+
+  .made-thumb {
+    position: relative;
+    width: 335px;
+    height: 500px;
+  }
+
+  .made-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+  .made-recipe-container {
+    padding: 20px 14px;
+    width: 335px;
+  }
+
+  .made-thumb {
+    position: relative;
+    width: 335px;
+    height: 500px;
+  }
+
+  .made-thumb button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .made-recipe-list li:not(:last-child) {
+    margin-bottom: 18px;
+  }
 }
 
 /* #endregion */
@@ -862,9 +978,11 @@ button {
   padding-bottom: 100px;
 }
 
-.loved-container {}
+.loved-container {
+}
 
-.loved-container {}
+.loved-container {
+}
 
 .loved-title {
   font-weight: 600;
@@ -874,7 +992,7 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: var(--orange);
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .loved-title-part {
@@ -888,9 +1006,14 @@ button {
   margin-bottom: 50px;
 }
 
-.loved-list-item {
-  width: calc((100% - 56px) / 3);
+.box-wrapper {
   position: relative;
+  height: 242px;
+  padding-top: 42px;
+}
+
+.loved-list-item {
+  flex-basis: calc((100% - 56px) / 3);
 }
 
 .loved-list-item-avatar {
@@ -904,12 +1027,12 @@ button {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   width: 360px;
-  height: 200px;
+  min-height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: var(--white);
 }
 
-.lived-list-item-name {
+.loved-list-item-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -950,6 +1073,89 @@ button {
   color: var(--white);
   background-color: var(--orange);
   border: none;
+}
+
+@media (max-width: 1199px) {
+  .loved-section {
+    padding-bottom: 80px;
+  }
+
+  .loved-list {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+
+  .loved-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .loved-list-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    scroll-snap-align: start;
+  }
+
+  .loved-list-item-box {
+    padding: 56px 16px 24px 16px;
+    width: 344px;
+  }
+
+  .loved-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+
+  .loved-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(17, 17, 17, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .loved-dot.active {
+    width: 28px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: var(--orange);
+  }
+}
+
+@media (max-width: 767px) {
+  .loved-section {
+    padding-bottom: 60px;
+  }
+
+  .loved-title {
+    margin-bottom: 32px;
+  }
+
+  .loved-list-item {
+    flex-basis: 100%;
+  }
+
+  .loved-list-item-box {
+    width: 335px;
+  }
+
+  .loved-indicators {
+    margin-bottom: 32px;
+  }
+
+  .loved-button {
+    padding: 12px 28px;
+    width: 165px;
+    height: 41px;
+    font-size: 14px;
+  }
 }
 
 /* #endregion section 5 Chocolate is loved */
