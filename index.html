@@ -331,13 +331,19 @@
           </h2>
           <div class="made-container">
             <div class="made-image-container">
-              <img
-                class="made-img"
-                src="./images/chocolate-s4.jpg"
-                alt="chocolate dripping from whisk into bowl"
-                width="600"
-                height="400"
-              />
+              <div class="made-thumb">
+              <button type="button"class="icon-play-circle">
+                  <svg class="icon-triangle-btn" width="14px" height="15px">
+                    <use href="./images/icons.svg#icon-play-btn"></use>
+                  </svg>
+              </button>
+                <picture >
+                  <source media="(max-width: 767px)" srcset="./images/chocolate-made-mob-min.jpg 1x,./images/chocolate-made-mob@2x-min.jpg 2x">          
+                  <source media="(max-width: 1199px)" srcset="./images/chocolate-made-tab-min.jpg 1x,./images/chocolate-made-tab@2x-min.jpg 2x"  >                 
+                  <source media="(min-width: 1200px)" srcset="./images/chocolate-made-desk-min.jpg 1x,./images/chocolate-made-desk@2x-min.jpg 2x"  >
+                  <img src="./images/chocolate-made-desk-min.jpg" alt="chocolate dripping from whisk into bowl" class="made-img">
+                </picture>
+            </div>
             </div>
             <div class="made-recipe-container">
               <h3 class="made-recipe-title">
