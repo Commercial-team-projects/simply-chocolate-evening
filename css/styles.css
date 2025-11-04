@@ -1163,11 +1163,10 @@ button {
 /* #region Footer */
 .footer-section {
   background-color: var(--violet);
-
   color: var(--white);
 }
 
-.footer-section .container {
+.footer-section>.container {
   padding-bottom: 50px;
   padding-top: 50px;
 }
@@ -1250,8 +1249,6 @@ button {
   top: -32px;
 }
 
-
-
 .navigation-list-footer {
   display: flex;
   gap: 24px;
@@ -1300,7 +1297,6 @@ button {
 .subscribe-form {
   display: flex;
 }
-
 
 .subscribe-input {
   display: block;
