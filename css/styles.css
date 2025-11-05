@@ -1383,8 +1383,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.popup-input:hover+.popup-input-icon,
-.popup-input:focus+.popup-input-icon {
+.modal-input:hover+.modal-input-icon,
+.modal-input:focus+.modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1406,7 +1406,7 @@ button {
   height: 24px;
 }
 
-.popup-input:hover+.popup-input-icon {
+.modal-input:hover+.modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1445,11 +1445,15 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked+.popup-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked+.modal-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
-  fill: var(--body-white);
+}
+
+
+.visually-hidden:checked+.modal-label-checkbox .checkbox-icon {
+  color: var(--white);
 }
 
 .modal-label-checkbox {
@@ -1460,6 +1464,7 @@ button {
   line-height: 1.33333;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
+  cursor: pointer;
 }
 
 .checkbox-custom-icon {
@@ -1473,12 +1478,16 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
   fill: transparent;
+  stroke: transparent;
+}
+
+.checkbox-icon {
+  color: transparent;
 }
 
 .policy {
   text-decoration: underline;
   color: var(--orange);
-  display: contents;
 }
 
 .modal-btn-send {
@@ -1492,6 +1501,14 @@ button {
   background-color: var(--orange);
   border: none;
   margin-top: 32px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--cream);
+  color: var(--orange);
 }
 
 @media (max-width: 767px) {

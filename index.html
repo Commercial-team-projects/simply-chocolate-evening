@@ -332,18 +332,40 @@
           <div class="made-container">
             <div class="made-image-container">
               <div class="made-thumb">
-              <button type="button"class="icon-play-circle">
+                <button type="button" class="icon-play-circle">
                   <svg class="icon-triangle-btn" width="14px" height="15px">
                     <use href="./images/icons.svg#icon-play-btn"></use>
                   </svg>
-              </button>
-                <picture >
-                  <source media="(max-width: 767px)" srcset="./images/chocolate-made-mob-min.jpg 1x,./images/chocolate-made-mob@2x-min.jpg 2x">          
-                  <source media="(max-width: 1199px)" srcset="./images/chocolate-made-tab-min.jpg 1x,./images/chocolate-made-tab@2x-min.jpg 2x"  >                 
-                  <source media="(min-width: 1200px)" srcset="./images/chocolate-made-desk-min.jpg 1x,./images/chocolate-made-desk@2x-min.jpg 2x"  >
-                  <img src="./images/chocolate-made-desk-min.jpg" alt="chocolate dripping from whisk into bowl" class="made-img">
+                </button>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/chocolate-made-mob-min.jpg    1x,
+                      ./images/chocolate-made-mob@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/chocolate-made-tab-min.jpg    1x,
+                      ./images/chocolate-made-tab@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/chocolate-made-desk-min.jpg    1x,
+                      ./images/chocolate-made-desk@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/chocolate-made-desk-min.jpg"
+                    alt="chocolate dripping from whisk into bowl"
+                    class="made-img"
+                  />
                 </picture>
-            </div>
+              </div>
             </div>
             <div class="made-recipe-container">
               <h3 class="made-recipe-title">
@@ -503,10 +525,10 @@
         </div>
       </div>
     </footer>
-    <!-------------------------------POP_UP--------------------------------->
+    <!-------------------------------MODAL--------------------------------->
     <div class="modal-overlay">
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" aria-label="close-btn">
           <svg class="modal-btn-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -525,6 +547,7 @@
                 type="text"
                 id="user-name"
                 name="user-name"
+                aria-label="user-name"
                 required
               />
               <svg class="modal-input-icon" width="17" height="17">
@@ -541,6 +564,8 @@
                 type="email"
                 id="email"
                 name="email"
+                aria-label="email"
+                autocomplete="off"
                 required
               />
               <svg class="modal-input-icon" width="17" height="17">
@@ -557,6 +582,8 @@
                 type="tel"
                 id="phone"
                 name="phone"
+                aria-label="phone"
+                autocomplete="off"
                 required
               />
               <svg class="modal-input-icon" width="17" height="17">
@@ -571,6 +598,7 @@
               class="modal-user-comment"
               id="user-comment"
               name="user-comment"
+              aria-label="user-comment"
               placeholder="Enter text"
             ></textarea>
           </div>
@@ -580,6 +608,7 @@
               class="visually-hidden"
               type="checkbox"
               name="user-privacy"
+              aria-label="checkbox"
               id="user-privacy"
               value="true"
               required
@@ -596,7 +625,9 @@
             </label>
           </div>
 
-          <button type="button" class="modal-btn-send">Send</button>
+          <button type="submit" class="modal-btn-send" aria-label="send">
+            Send
+          </button>
         </form>
       </div>
     </div>
