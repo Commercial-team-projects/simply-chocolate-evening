@@ -34,6 +34,8 @@ mMenuInnerLinks.addEventListener("click", (event) => {
   mMenuLayer.classList.remove("is-open");
 });
 
+// Loved section
+
 const track = document.querySelector(".loved-list");
 const dots = document.querySelectorAll(".loved-dot");
 const items = document.querySelectorAll(".loved-list-item");
@@ -57,3 +59,17 @@ track.addEventListener("scroll", () => {
 window.requestAnimationFrame(updateActiveDot);
 });
 window.addEventListener("resize", updateActiveDot);
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    const itemWidth = items[0].offsetWidth + 13;
+    const scrollTo = index * itemWidth;
+
+    track.scrollTo({
+      left: scrollTo,
+      behavior: "smooth",
+    });
+
+  });
+});
+window.addEventListener("load", updateActiveDot);

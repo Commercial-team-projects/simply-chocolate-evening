@@ -1074,7 +1074,7 @@ button {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-
+    scroll-behavior: smooth;
     gap: 16px;
     margin-bottom: 30px;
   }
@@ -1108,6 +1108,7 @@ button {
     border-radius: 50%;
     background-color: rgba(17, 17, 17, 0.1);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .loved-dot.active {
