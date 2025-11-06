@@ -1575,7 +1575,7 @@ button {
     align-items: center;
   }
 
-  .modal-btn-send {
+  .checkbox-custom-icon .modal-btn-send {
     font-size: 14px;
     border-radius: 100px;
     padding: 12px 28px;
