@@ -29,7 +29,7 @@ body {
   color: var(--black);
   background-color: var(--body-white);
   margin: 0 auto;
-  line-height: 1.21429;
+  line-height: 1.21;
 }
 
 .container {
@@ -96,7 +96,7 @@ button {
   text-transform: uppercase;
 }
 
-.logo>.accent {
+.logo > .accent {
   font-style: italic;
 }
 
@@ -111,13 +111,14 @@ button {
   }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+}
 
 /* #endregion */
 
 /* #region Header */
 
-.header-section>.container {
+.header-section > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -853,7 +854,6 @@ button {
 /*! Tablet Adaptive */
 
 @media (max-width: 1199px) {
-
   .made-section {
     padding-bottom: 80px;
   }
@@ -872,12 +872,10 @@ button {
   .made-recipe-list li:not(:last-child) {
     margin-bottom: 18px;
   }
-
 }
 
 /*! Mobile Adaptive  */
 @media (max-width: 767px) {
-
   .made-section {
     padding-bottom: 60px;
   }
@@ -916,7 +914,6 @@ button {
     border: 1px var(--orange) solid;
   }
 
-
   .made-image-container {
     position: relative;
   }
@@ -928,7 +925,6 @@ button {
     transform: translate(50%, -50%);
     background-color: transparent;
     border: none;
-
   }
 
   .made-thumb {
@@ -1384,8 +1380,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.modal-input:hover+.modal-input-icon,
-.modal-input:focus+.modal-input-icon {
+.modal-input:hover + .modal-input-icon,
+.modal-input:focus + .modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1407,7 +1403,7 @@ button {
   height: 24px;
 }
 
-.modal-input:hover+.modal-input-icon {
+.modal-input:hover + .modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1446,14 +1442,13 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked+.modal-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked + .modal-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
 }
 
-
-.visually-hidden:checked+.modal-label-checkbox .checkbox-icon {
+.visually-hidden:checked + .modal-label-checkbox .checkbox-icon {
   color: var(--white);
 }
 
