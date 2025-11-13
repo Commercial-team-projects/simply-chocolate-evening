@@ -496,9 +496,12 @@
               type="email"
               name="email"
               id="email"
+              aria-label="Email address"
+              autocomplete="off"
               placeholder="Enter your email"
+              required
             />
-            <button class="subscribe-btn">Subscribe</button>
+            <button class="subscribe-btn" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
@@ -534,13 +537,13 @@
           </div>
 
           <div class="modal-form-content">
-            <label class="modal-label" for="email">Email</label>
+            <label class="modal-label" for="subscribe-email">Email</label>
             <div class="modal-form-input">
               <input
                 class="modal-input"
                 type="email"
-                id="email"
-                name="email"
+                id="subscribe-email"
+                name="subscribe-email"
                 required
               />
               <svg class="modal-input-icon" width="17" height="17">
@@ -572,6 +575,7 @@
               id="user-comment"
               name="user-comment"
               placeholder="Enter text"
+              required
             ></textarea>
           </div>
 
