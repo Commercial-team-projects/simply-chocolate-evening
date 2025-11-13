@@ -29,7 +29,7 @@ body {
   color: var(--black);
   background-color: var(--body-white);
   margin: 0 auto;
-  line-height: 1.21429;
+  line-height: 1.21;
 }
 
 .container {
@@ -1070,7 +1070,7 @@ button {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-
+    scroll-behavior: smooth;
     gap: 16px;
     margin-bottom: 30px;
   }
@@ -1104,6 +1104,7 @@ button {
     border-radius: 50%;
     background-color: rgba(17, 17, 17, 0.1);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .loved-dot.active {
@@ -1537,7 +1538,10 @@ button {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
-  fill: var(--body-white);
+}
+
+.visually-hidden:checked + .modal-label-checkbox .checkbox-icon {
+  color: var(--white);
 }
 
 .modal-label-checkbox {
@@ -1548,6 +1552,7 @@ button {
   line-height: 1.33333;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
+  cursor: pointer;
 }
 
 .checkbox-custom-icon {
@@ -1561,12 +1566,16 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
   fill: transparent;
+  stroke: transparent;
+}
+
+.checkbox-icon {
+  color: transparent;
 }
 
 .policy {
   text-decoration: underline;
   color: var(--orange);
-  display: contents;
 }
 
 .modal-btn-send {
@@ -1580,6 +1589,14 @@ button {
   background-color: var(--orange);
   border: none;
   margin-top: 32px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+  background-color: var(--cream);
+  color: var(--orange);
 }
 
 @media (max-width: 767px) {
@@ -1646,7 +1663,7 @@ button {
     align-items: center;
   }
 
-  .modal-btn-send {
+  .checkbox-custom-icon .modal-btn-send {
     font-size: 14px;
     border-radius: 100px;
     padding: 12px 28px;
