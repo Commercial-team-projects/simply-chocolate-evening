@@ -776,9 +776,6 @@ button {
 
 /* #region Section 4 Made */
 .made-section {
-}
-
-.made-section {
   padding-bottom: 100px;
 }
 
@@ -822,9 +819,6 @@ button {
   line-height: 1.33;
   color: var(--black);
   margin-bottom: 28px;
-}
-
-.recipe-desc {
 }
 
 .recipe-desc {
@@ -973,12 +967,6 @@ button {
 /* #region section 5 Chocolate is loved */
 .loved-section {
   padding-bottom: 100px;
-}
-
-.loved-container {
-}
-
-.loved-container {
 }
 
 .loved-title {
@@ -1164,7 +1152,7 @@ button {
   color: var(--white);
 }
 
-.footer-section .container {
+.footer-section>.container {
   padding-bottom: 50px;
   padding-top: 50px;
 }
