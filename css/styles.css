@@ -24,28 +24,51 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   font-family: var(--font-family);
   color: var(--black);
+  font-size: 14px;
   background-color: var(--body-white);
-  margin: 0 auto;
   line-height: 1.21;
 }
 
+section {
+  padding: 50px 0;
+}
+
 .container {
-  width: 1136px;
+  max-width: 1200px;
+  padding: 0 64px;
   margin: 0 auto;
 }
 
 @media (max-width: 1199px) {
   .container {
-    width: 704px;
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  section {
+    padding: 40px 0;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    width: 335px;
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 30px 0;
   }
 }
 
@@ -63,31 +86,34 @@ p {
   margin: 0;
 }
 
+ol,
 ul {
   list-style-type: none;
+  padding: 0;
   margin: 0;
-  padding-left: 0;
 }
 
 a {
   text-decoration: none;
   color: currentColor;
+  cursor: pointer;
 }
 
-img {
+img,
+picture {
   display: block;
   max-width: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 button {
   line-height: normal;
+  cursor: pointer;
 }
 
 .logo {
   display: flex;
   align-items: center;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -111,20 +137,14 @@ button {
   }
 }
 
-@media (max-width: 767px) {
-}
-
 /* #endregion */
 
 /* #region Header */
 
-.header-section > .container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding-top: 24px;
-  padding-bottom: 32px;
 }
 
 .header-section .wrapper {
@@ -139,11 +159,12 @@ button {
 }
 
 .navigation-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  padding: 4px 0;
+  padding: 28px 0;
 }
 
 .socials-list {
@@ -276,9 +297,9 @@ button {
 
 /* #endregion */
 
-/* #region Section 1 Hero */
+/* #region Hero */
 .hero {
-  padding-bottom: 85px;
+  padding-top: 0;
 }
 
 .hero-container {
@@ -465,9 +486,10 @@ button {
 
 /* #endregion */
 
-/* #region Section 2 Benefits */
+/* #region Benefits */
 .benefits {
   background-color: var(--violet);
+  min-width: 320px;
 }
 
 .benefits-container {
@@ -567,10 +589,10 @@ button {
 
 /* #endregion */
 
-/* #region Section 3 Taste */
+/* #region Taste */
+
 .taste-section {
-  padding-bottom: 110px;
-  padding-top: 77px;
+  padding-top: 100px;
 }
 
 .taste-title {
@@ -774,10 +796,7 @@ button {
 
 /* #endregion */
 
-/* #region Section 4 Made */
-.made-section {
-  padding-bottom: 100px;
-}
+/* #region Made */
 
 .made-title {
   font-weight: 600;
@@ -964,7 +983,8 @@ button {
 
 /* #endregion */
 
-/* #region section 5 Chocolate is loved */
+/* #region Chocolate is loved */
+
 .loved-section {
   padding-bottom: 100px;
 }
@@ -1149,26 +1169,24 @@ button {
 /* #region Footer */
 .footer-section {
   background-color: var(--violet);
-  min-width: 335px;
   color: var(--white);
+  padding: 50px 0;
+  min-width: 320px;
 }
-.footer-section > .container {
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
+
 @media (max-width: 1199px) {
-  .footer-section .container {
+  /* .footer-section .container {
     width: 704px;
-  }
+  } */
 }
 @media (max-width: 767px) {
-  .footer-section .container {
+  /* .footer-section .container {
     width: 375px;
     padding-bottom: 32px;
     padding-top: 32px;
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
 }
 .footer-row {
   display: flex;
@@ -1267,9 +1285,9 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-.footer-section .navigation-item-footer {
+/* .footer-section .navigation-item-footer {
   color: var(--white);
-}
+} */
 .subscribe-form {
   display: flex;
 }

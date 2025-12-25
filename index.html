@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +20,7 @@
 
   <body>
     <header class="header-section">
-      <div class="container">
+      <div class="container header-container">
         <a class="logo" href="./index.html">
           <span class="accent">Simply</span>&nbsp;Chocolate
           <svg class="icon" width="24" height="24">
@@ -48,6 +49,7 @@
                 class="social-link"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg class="social-item-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
@@ -55,7 +57,12 @@
               </a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="https://x.com/" target="_blank">
+              <a
+                class="social-link"
+                href="https://x.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg class="social-item-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -72,7 +79,7 @@
       </div>
     </header>
     <main>
-      <!-- Section 1 -->
+      <!-- Hero -->
       <section id="hero" class="hero">
         <div class="container hero-container">
           <div class="hero-box">
@@ -97,7 +104,7 @@
                 <span class="hero-scroll-text">scroll down</span>
                 <a class="hero-scroll-link" href="#loved">
                   <svg class="hero-icon-arrow" width="14" height="8">
-                    <use href="./images/icons.svg#icon-Vector-1"></use>
+                    <use href="./images/icons.svg#icon-vector"></use>
                   </svg>
                 </a>
               </div>
@@ -105,7 +112,7 @@
           </div>
         </div>
       </section>
-      <!-- Section 2 -->
+      <!-- Benefits -->
       <section id="benefits" class="benefits">
         <div class="benefits-container container">
           <h2 class="benefits-title visually-hidden">Benefits</h2>
@@ -158,7 +165,7 @@
           </ul>
         </div>
       </section>
-      <!-- Section 3 -->
+      <!-- Taste -->
       <section id="taste" class="taste-section">
         <div class="container">
           <h2 class="taste-title">
@@ -323,7 +330,7 @@
           </ul>
         </div>
       </section>
-      <!-- Section 4 How it's made?-->
+      <!-- How it's made?-->
       <section id="made" class="made-section">
         <div class="container">
           <h2 class="made-title">
@@ -345,26 +352,26 @@
                   <source
                     media="(max-width: 767px)"
                     srcset="
-                      ./images/chocolate-made-mob-min.jpg    1x,
-                      ./images/chocolate-made-mob@2x-min.jpg 2x
+                      ./images/made-section/made-mob.avif    1x,
+                      ./images/made-section/made-mob@2x.avif 2x
                     "
                   />
                   <source
                     media="(max-width: 1199px)"
                     srcset="
-                      ./images/chocolate-made-tab-min.jpg    1x,
-                      ./images/chocolate-made-tab@2x-min.jpg 2x
+                      ./images/made-section/made-tab.avif    1x,
+                      ./images/made-section/made-tab@2x.avif 2x
                     "
                   />
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/chocolate-made-desk-min.jpg    1x,
-                      ./images/chocolate-made-desk@2x-min.jpg 2x
+                      ./images/made-section/made-desk.avif    1x,
+                      ./images/made-section/made-desk@2x.avif 2x
                     "
                   />
                   <img
-                    src="./images/chocolate-made-desk-min.jpg"
+                    src="./images/made-section/made-desk.avif"
                     alt="chocolate dripping from whisk into bowl"
                     class="made-img"
                   />
@@ -412,7 +419,7 @@
           </div>
         </div>
       </section>
-      <!-- Section 5 -->
+      <!-- Loved -->
       <section id="loved" class="loved-section">
         <div class="container loved-container">
           <h2 class="loved-title">
@@ -423,7 +430,7 @@
               <div class="box-wrapper">
                 <img
                   class="loved-list-item-avatar"
-                  src="./images/avatar-review1.png"
+                  src="./images/loved-section/avatar1.png"
                   alt="avatar-review1"
                   width="80"
                 />
@@ -440,7 +447,7 @@
               <div class="box-wrapper">
                 <img
                   class="loved-list-item-avatar"
-                  src="./images/avatar-review2.png"
+                  src="./images/loved-section/avatar2.png"
                   alt="avatar-review2"
                   width="80"
                 />
@@ -458,7 +465,7 @@
               <div class="box-wrapper">
                 <img
                   class="loved-list-item-avatar"
-                  src="./images/avatar-review3.png"
+                  src="./images/loved-section/avatar3.png"
                   alt="avatar-review3"
                   width="80"
                 />
