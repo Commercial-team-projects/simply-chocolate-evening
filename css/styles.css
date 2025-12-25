@@ -2,7 +2,7 @@
 
 :root {
   /*fonts*/
-  --font-family: 'Montserrat', sans-serif;
+  --font-family: "Montserrat", sans-serif;
 
   /*colors*/
   --body-white: #fafafa;
@@ -829,7 +829,7 @@ button {
 }
 
 .recipe-list::before {
-  content: '';
+  content: "";
   background-color: var(--list-mark-fill);
   border-radius: 50%;
   border: 1px solid var(--list-mark-stroke);
@@ -1152,18 +1152,15 @@ button {
   min-width: 335px;
   color: var(--white);
 }
-
-.footer-section>.container {
+.footer-section > .container {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
 @media (max-width: 1199px) {
   .footer-section .container {
     width: 704px;
   }
 }
-
 @media (max-width: 767px) {
   .footer-section .container {
     width: 375px;
@@ -1173,50 +1170,47 @@ button {
     padding-right: 20px;
   }
 }
-
 .footer-row {
   display: flex;
   justify-content: space-between;
 }
-
 @media (max-width: 767px) {
   .footer-row {
     flex-direction: column;
   }
 }
-
 .footer-slogan {
   font-weight: 500;
   font-size: 24px;
   letter-spacing: -0.02em;
   max-width: 300px;
 }
-
 @media (max-width: 767px) {
   .footer-slogan {
     margin-bottom: 32px;
     font-size: 28px;
   }
 }
-
+@media (max-width: 1199px) {
+  .footer-slogan {
+    font-size: 28px;
+  }
+}
 .footer-slogan .accent {
   color: var(--orange);
 }
-
 .row-1 {
-  margin-bottom: 64px;
+  margin-bottom: 78px;
 }
 @media (max-width: 767px) {
   .row-1 {
     margin-bottom: 78px;
   }
 }
-
 .row-2 {
   align-items: center;
   position: relative;
 }
-
 @media (max-width: 1199px) {
   .row-2 {
     display: flex;
@@ -1225,7 +1219,6 @@ button {
     align-items: center;
   }
 }
-
 @media (max-width: 767px) {
   .row-2 {
     display: flex;
@@ -1233,27 +1226,23 @@ button {
     align-items: start;
   }
 }
-
 .row-2::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
   top: -32px;
 }
-
 .navigation-list-footer {
   display: flex;
   gap: 24px;
 }
-
 @media (max-width: 1199px) {
   .navigation-list-footer {
     align-items: center;
     gap: 16px;
   }
 }
-
 @media (max-width: 767px) {
   .navigation-list-footer {
     display: flex;
@@ -1262,34 +1251,28 @@ button {
     margin-bottom: 20px;
   }
 }
-
 .contacts-title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   margin-bottom: 14px;
 }
-
 .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-
 .contacts-link {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-
 .footer-section .navigation-item-footer {
   color: var(--white);
 }
-
 .subscribe-form {
   display: flex;
 }
-
 .subscribe-input {
   display: block;
   background-color: transparent;
@@ -1304,28 +1287,23 @@ button {
   letter-spacing: -0.02em;
   transition: border-color 500ms ease;
 }
-
 @media (max-width: 1199px) {
   .subscribe-input {
     font-size: 14px;
     width: 232px;
   }
 }
-
 @media (max-width: 767px) {
   .subscribe-input {
     max-width: 207px;
   }
 }
-
 .subscribe-input:focus {
   border-color: var(--orange);
 }
-
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -1339,28 +1317,25 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
+  cursor: pointer;
   transition: background-color, color 500ms ease;
 }
-
 @media (max-width: 1199px) {
   .subscribe-btn {
     max-width: 128px;
     cursor: pointer;
   }
 }
-
 @media (max-width: 767px) {
   .subscribe-btn {
     max-width: 120px;
   }
 }
-
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--cream);
   color: var(--orange);
 }
-
 /* #endregion */
 
 /* #region MODAL */
