@@ -45,7 +45,7 @@ section {
 
 .container {
   max-width: 1200px;
-  padding: 0 64px;
+  padding: 0 32px;
   margin: 0 auto;
 }
 
@@ -303,15 +303,26 @@ button {
 }
 
 .hero-container {
+  position: relative;
+}
+.picture-wrap {
+  position: absolute;
+  top: 0;
+  width: 1136px;
+  height: 600px;
   background-color: var(--cream);
-  background-image: url(../images/hero-image.jpg);
-  background-repeat: no-repeat;
-  border-radius: 32px;
-  padding: 40px 40px 40px 40px;
+  border-radius: 30px;
+  z-index: -1000;
+}
+.hero-image {
+  z-index: -999;
+}
+.hero-picture {
+  border-radius: 30px;
 }
 
 .hero-box {
-  padding-top: 340px;
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-title {
@@ -421,27 +432,22 @@ button {
 }
 
 @media (max-width: 1199px) {
-  .hero-container {
-    background-image: url(../images/tab-hero-bg.jpg);
-  }
-
-  .hero {
-    padding-bottom: 40px;
-  }
-
   .hero-box {
-    padding-top: 630px;
+    padding: 671px 40px 40px 40px;
+  }
+  .picture-wrap {
+    width: 704px;
+    height: 890px;
   }
 }
 
 @media (max-width: 767px) {
-  .hero-container {
-    background-image: url(../images/mob-hero-bg.jpg);
-    padding: 20px;
-  }
-
   .hero-box {
-    padding-top: 375px;
+    padding: 395px 20px 20px 20px;
+  }
+  .picture-wrap {
+    width: 335px;
+    height: 621px;
   }
 
   .hero-title {
