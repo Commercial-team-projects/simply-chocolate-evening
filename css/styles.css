@@ -1149,77 +1149,130 @@ button {
 /* #region Footer */
 .footer-section {
   background-color: var(--violet);
-
+  min-width: 335px;
   color: var(--white);
 }
-
-.footer-section .container {
+.footer-section > .container {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
+@media (max-width: 1199px) {
+  .footer-section .container {
+    width: 704px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-section .container {
+    width: 375px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .footer-row {
   display: flex;
   justify-content: space-between;
 }
-
+@media (max-width: 767px) {
+  .footer-row {
+    flex-direction: column;
+  }
+}
 .footer-slogan {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: -0.02em;
   max-width: 300px;
 }
-
+@media (max-width: 767px) {
+  .footer-slogan {
+    margin-bottom: 32px;
+    font-size: 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-slogan {
+    font-size: 28px;
+  }
+}
 .footer-slogan .accent {
   color: var(--orange);
 }
-
 .row-1 {
-  margin-bottom: 74px;
+  margin-bottom: 78px;
 }
-
+@media (max-width: 767px) {
+  .row-1 {
+    margin-bottom: 78px;
+  }
+}
 .row-2 {
   align-items: center;
   position: relative;
 }
-
+@media (max-width: 1199px) {
+  .row-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .row-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .row-2::before {
   content: "";
-
   position: absolute;
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  top: -24px;
+  top: -32px;
 }
-
+.navigation-list-footer {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1199px) {
+  .navigation-list-footer {
+    align-items: center;
+    gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .navigation-list-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+}
 .contacts-title {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-
   margin-bottom: 14px;
 }
-
 .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-
 .contacts-link {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
 }
-
-.footer-section .navigation-item {
+.footer-section .navigation-item-footer {
   color: var(--white);
 }
-
 .subscribe-form {
   display: flex;
 }
-
 .subscribe-input {
   display: block;
   background-color: transparent;
@@ -1230,21 +1283,27 @@ button {
   margin-right: 8px;
   outline: none;
   color: var(--white);
-
   font-size: 18px;
   letter-spacing: -0.02em;
-
   transition: border-color 500ms ease;
 }
-
+@media (max-width: 1199px) {
+  .subscribe-input {
+    font-size: 14px;
+    width: 232px;
+  }
+}
+@media (max-width: 767px) {
+  .subscribe-input {
+    max-width: 207px;
+  }
+}
 .subscribe-input:focus {
   border-color: var(--orange);
 }
-
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
-
 .subscribe-btn {
   display: flex;
   align-items: center;
@@ -1255,20 +1314,28 @@ button {
   max-width: 137px;
   max-height: 52px;
   background-color: var(--orange);
-
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
-
+  cursor: pointer;
   transition: background-color, color 500ms ease;
 }
-
+@media (max-width: 1199px) {
+  .subscribe-btn {
+    max-width: 128px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 767px) {
+  .subscribe-btn {
+    max-width: 120px;
+  }
+}
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--cream);
   color: var(--orange);
 }
-
 /* #endregion */
 
 /* #region MODAL */
@@ -1380,8 +1447,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.modal-input:hover + .modal-input-icon,
-.modal-input:focus + .modal-input-icon {
+.popup-input:hover + .popup-input-icon,
+.popup-input:focus + .popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1403,7 +1470,7 @@ button {
   height: 24px;
 }
 
-.modal-input:hover + .modal-input-icon {
+.popup-input:hover + .popup-input-icon {
   stroke: var(--orange);
 }
 
@@ -1442,7 +1509,7 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked + .modal-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked + .popup-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
