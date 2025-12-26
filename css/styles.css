@@ -499,10 +499,6 @@ button {
   min-width: 320px;
 }
 
-.benefits-container {
-  padding: 50px 18px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1472,8 +1468,8 @@ button {
   border: 1.5px solid var(--orange);
 }
 
-.popup-input:hover + .popup-input-icon,
-.popup-input:focus + .popup-input-icon {
+.modal-input:hover + .modal-input-icon,
+.modal-input:focus + .modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1495,7 +1491,7 @@ button {
   height: 24px;
 }
 
-.popup-input:hover + .popup-input-icon {
+.modal-input:hover + .modal-input-icon {
   stroke: var(--orange);
 }
 
@@ -1534,7 +1530,7 @@ button {
   height: 20px;
 }
 
-.visually-hidden:checked + .popup-label-checkbox .checkbox-custom-icon {
+.visually-hidden:checked + .modal-label-checkbox .checkbox-custom-icon {
   border-radius: 6px;
   background-color: var(--orange);
   border: none;
