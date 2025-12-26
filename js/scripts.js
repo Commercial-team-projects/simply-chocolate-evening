@@ -62,13 +62,26 @@ window.addEventListener("resize", updateActiveDot);
 
 dots.forEach((dot, index) => {
   dot.addEventListener("click", () => {
-    const itemWidth = items[0].offsetWidth + 13;
-    const scrollTo = index * itemWidth;
 
-    track.scrollTo({
-      left: scrollTo,
-      behavior: "smooth",
-    });
+    const isTablet = window.matchMedia("(min-width: 767px) and (max-width: 1199px)").matches;
+
+    if (isTablet) {
+      const itemWidth = items[0].offsetWidth - 160;
+      const scrollTo = index * itemWidth;
+
+      track.scrollTo({
+        left: scrollTo,
+        behavior: "smooth",
+      });
+    } else {
+      const itemWidth = items[0].offsetWidth + 13;
+      const scrollTo = index * itemWidth;
+
+      track.scrollTo({
+        left: scrollTo,
+        behavior: "smooth",
+      });
+    }
 
   });
 });
