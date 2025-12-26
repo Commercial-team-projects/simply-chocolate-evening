@@ -39,12 +39,29 @@
         <symbol id="icon-vector" viewBox="0 0 56 32">
             <path d="M30.603 21.134c-0.341 0.344-0.746 0.616-1.193 0.803s-0.926 0.282-1.41 0.282-0.963-0.096-1.41-0.282c-0.447-0.186-0.852-0.459-1.193-0.803l-16.793-16.83c-0.341-0.344-0.746-0.616-1.193-0.803s-0.926-0.282-1.41-0.282c-0.484 0-0.963 0.096-1.41 0.282s-0.852 0.459-1.193 0.803c-0.683 0.687-1.066 1.616-1.066 2.585s0.383 1.898 1.066 2.585l16.83 16.83c2.062 2.060 4.858 3.217 7.773 3.217s5.711-1.157 7.773-3.217l16.83-16.83c0.677-0.683 1.059-1.605 1.063-2.567 0.003-0.483-0.090-0.961-0.272-1.408s-0.451-0.853-0.791-1.196c-0.341-0.344-0.746-0.616-1.194-0.803s-0.926-0.282-1.41-0.282-0.963 0.096-1.41 0.282c-0.447 0.186-0.852 0.459-1.193 0.803l-16.793 16.83z"></path>
         </symbol>
-<symbol id="icon-close" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
+        <symbol id="icon-close" viewBox="0 0 14 14">
+            <path
+                d="M13 1L1 13M1 1L13 13"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+            />
+        </symbol>
+
+
+<symbol id="icon-burger" viewBox="1 0 46 32">
+  <path
+    d="M3 16h42M3 2h42M3 30h42"
+    fill="none"
+    stroke="currentColor"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    stroke-miterlimit="4"
+    stroke-width="4"
+  />
 </symbol>
-<symbol id="icon-burger" viewBox="0 0 48 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3 16h42M3 2h42M3 30h42"></path>
-</symbol>
+
 <symbol id="icon-play-btn" viewBox="0 0 30 32">
 <path d="M0 32v-32l29.867 16-29.867 16z"></path>
 </symbol>
