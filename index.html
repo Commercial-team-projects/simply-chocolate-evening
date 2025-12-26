@@ -82,10 +82,38 @@
       <!-- Hero -->
       <section id="hero" class="hero">
         <div class="container hero-container">
+          <picture class="hero-image">
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/hero-section/hero-desk.avif    1x,
+                ./images/hero-section/hero-desk@2x.avif 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/hero-section/hero-tab.avif    1x,
+                ./images/hero-section/hero-tab@2x.avif 2x
+              "
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/hero-section/hero-mob.avif    1x,
+                ./images/hero-section/hero-mob@2x.avif 2x
+              "
+            />
+            <img
+              class="hero-picture"
+              src="./images/hero-section/hero-mob.avif"
+              alt="chocolate banner"
+            />
+          </picture>
           <div class="hero-box">
             <h1 class="hero-title">
-              Treat yourself or a loved one to<br />
-              our finest ingredients for a moment of pure delight!
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
             </h1>
             <div class="hero-btn">
               <ul class="hero-list">

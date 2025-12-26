@@ -45,7 +45,7 @@ section {
 
 .container {
   max-width: 1200px;
-  padding: 0 64px;
+  padding: 0 32px;
   margin: 0 auto;
 }
 
@@ -303,15 +303,37 @@ button {
 }
 
 .hero-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+  min-height: 600px;
+  padding: 40px;
   background-color: var(--cream);
-  background-image: url(../images/hero-image.jpg);
-  background-repeat: no-repeat;
-  border-radius: 32px;
-  padding: 40px 40px 40px 40px;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.hero-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-box {
-  padding-top: 340px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .hero-title {
@@ -320,7 +342,6 @@ button {
   font-size: 28px;
   letter-spacing: -0.03em;
   color: var(--white);
-  margin-bottom: 32px;
 }
 
 .hero-btn {
@@ -422,28 +443,14 @@ button {
 
 @media (max-width: 1199px) {
   .hero-container {
-    background-image: url(../images/tab-hero-bg.jpg);
-  }
-
-  .hero {
-    padding-bottom: 40px;
-  }
-
-  .hero-box {
-    padding-top: 630px;
+    min-height: 890px;
   }
 }
 
 @media (max-width: 767px) {
   .hero-container {
-    background-image: url(../images/mob-hero-bg.jpg);
-    padding: 20px;
+    min-height: 621px;
   }
-
-  .hero-box {
-    padding-top: 375px;
-  }
-
   .hero-title {
     font-size: 20px;
     line-height: 1.2;
