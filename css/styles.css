@@ -117,7 +117,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
   color: var(--black);
   text-transform: uppercase;
   padding: 16px 0 24px;
@@ -129,13 +129,6 @@ button {
 
 .logo .icon {
   margin-left: 4px;
-}
-
-@media (max-width: 1199px) {
-  .logo {
-    font-size: 14px;
-    line-height: 1.29;
-  }
 }
 
 /* #endregion */
@@ -166,7 +159,7 @@ button {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.017em;
   padding: 20px 0 28px;
 }
 
@@ -184,7 +177,6 @@ button {
 .social-item-icon {
   stroke: var(--black);
   fill: none;
-
   transition: stroke 500ms ease;
 }
 
@@ -234,6 +226,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 7px;
+  color: var(--white);
 }
 
 .close-btn .btn-icon {
@@ -249,6 +242,7 @@ button {
 .mobile-menu .navigation-link {
   color: var(--white);
   padding: 6px 0;
+  letter-spacing: -0.02em;
 }
 
 .mobile-menu .navigation-link:hover,
@@ -269,6 +263,12 @@ button {
 @media (max-width: 1199px) {
   .header-section .wrapper {
     gap: 48px;
+  }
+
+  .logo {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.038em;
   }
 }
 
