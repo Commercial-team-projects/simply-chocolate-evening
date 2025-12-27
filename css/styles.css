@@ -1423,12 +1423,12 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  padding: 0;
+  padding: 7px;
 }
 
 .modal-btn-icon {
-  width: 28px;
-  height: 28px;
+  width: 14px;
+  height: 14px;
   stroke: var(--black);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
