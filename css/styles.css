@@ -460,9 +460,6 @@ button {
   .hero-card {
     min-height: 890px;
   }
-  .hero-image::after {
-    min-height: 890px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -470,9 +467,7 @@ button {
     min-height: 620px;
     padding: 20px;
   }
-  .hero-image::after {
-    min-height: 620px;
-  }
+
   .hero-title {
     font-size: 20px;
     line-height: 1.2;
@@ -933,9 +928,6 @@ button {
 @media (max-width: 767px) {
   .made-section {
     padding-bottom: 60px;
-  }
-  .made-image::after {
-    min-height: 500px;
   }
 
   .made-thumb button {
