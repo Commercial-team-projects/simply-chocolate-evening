@@ -157,7 +157,6 @@ button {
 .navigation-link {
   display: block;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.017em;
   padding: 20px 0;
@@ -461,9 +460,6 @@ button {
   .hero-card {
     min-height: 890px;
   }
-  .hero-image::after {
-    min-height: 890px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -471,9 +467,7 @@ button {
     min-height: 620px;
     padding: 20px;
   }
-  .hero-image::after {
-    min-height: 620px;
-  }
+
   .hero-title {
     font-size: 20px;
     line-height: 1.2;
@@ -543,13 +537,12 @@ button {
 
 .benefits-list {
   display: flex;
+  justify-content: center;
   gap: 70px;
 }
 
 .benefits-list-item {
   position: relative;
-  width: 326px;
-  padding-right: 18px;
 }
 
 .benefits-item-icon {
@@ -571,9 +564,7 @@ button {
 }
 
 .benefits-item-text {
-  width: 100%;
-  min-width: 308px;
-  font-size: 14px;
+  width: 308px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -627,15 +618,19 @@ button {
   padding-top: 100px;
 }
 
+.taste-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .taste-title {
   font-weight: 600;
   font-size: 24px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--black);
   width: 411px;
-  margin: 0 auto;
   margin-bottom: 28px;
 }
 
@@ -644,20 +639,16 @@ button {
 }
 
 .taste-description {
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--black);
   width: 486px;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .taste-list {
   display: flex;
   gap: 19px;
-  margin: 0 auto;
 }
 
 .taste-list-item {
@@ -835,10 +826,8 @@ button {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-
   text-align: center;
   text-transform: uppercase;
-  color: var(--black);
   margin-bottom: 50px;
 }
 
@@ -848,8 +837,6 @@ button {
 
 .made-container {
   display: flex;
-  align-items: stretch;
-  flex-direction: row;
   gap: 20px;
 }
 
@@ -873,9 +860,9 @@ button {
 }
 
 .made-recipe-container {
-  width: 516px;
+  width: 500px;
   background-color: var(--white);
-  padding: 32px 59px 32px 32px;
+  padding: 32px;
   border-radius: 15px;
 }
 
@@ -883,13 +870,10 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  color: var(--black);
   margin-bottom: 28px;
 }
 
 .recipe-desc {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.3;
   letter-spacing: -0.02em;
 }
@@ -945,9 +929,6 @@ button {
   .made-section {
     padding-bottom: 60px;
   }
-  .made-image::after {
-    min-height: 500px;
-  }
 
   .made-thumb button {
     display: unset;
@@ -961,7 +942,6 @@ button {
     border: 1px var(--white) solid;
     background-color: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
   }
 
   .icon-triangle-btn {
@@ -1056,7 +1036,6 @@ button {
 
 .loved-list {
   display: flex;
-  align-items: center;
   gap: 28px;
   margin-bottom: 50px;
 }
@@ -1078,10 +1057,9 @@ button {
 }
 
 .loved-list-item-box {
-  padding: 56px 24px 24px 24px;
+  padding: 56px 24px 24px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  width: 360px;
   min-height: 200px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: var(--white);
@@ -1092,18 +1070,14 @@ button {
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
-  color: var(--black);
   margin-bottom: 24px;
 }
 
 .loved-list-item-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
-  max-width: 100%;
 }
 
 .loved-button {
@@ -1117,7 +1091,6 @@ button {
   background-color: var(--body-white);
   font-weight: 600;
   font-size: 18px;
-  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1389,13 +1362,11 @@ button {
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
-  cursor: pointer;
   transition: background-color, color 500ms ease;
 }
 @media (max-width: 1199px) {
   .subscribe-btn {
     max-width: 128px;
-    cursor: pointer;
   }
 }
 @media (max-width: 767px) {
@@ -1456,13 +1427,12 @@ button {
   justify-content: center;
   background-color: transparent;
   border: none;
-  cursor: pointer;
-  padding: 0;
+  padding: 7px;
 }
 
 .modal-btn-icon {
-  width: 28px;
-  height: 28px;
+  width: 14px;
+  height: 14px;
   stroke: var(--black);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1478,9 +1448,7 @@ button {
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--black);
   margin-bottom: 40px;
-  width: 100%;
 }
 
 .modal-title-acent {
@@ -1492,8 +1460,6 @@ button {
 }
 
 .modal-label {
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
@@ -1555,7 +1521,6 @@ button {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
   resize: none;
   outline: transparent;
-  font-weight: 400;
   font-size: 13px;
   letter-spacing: -0.02em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1594,12 +1559,11 @@ button {
 .modal-label-checkbox {
   display: flex;
   gap: 12px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   cursor: pointer;
+  margin-bottom: 32px;
 }
 
 .checkbox-custom-icon {
@@ -1627,7 +1591,6 @@ button {
 
 .modal-btn-send {
   font-weight: 600;
-  font-size: 14px;
   color: var(--white);
   border-radius: 100px;
   padding: 14px 40px;
@@ -1635,8 +1598,6 @@ button {
   height: 45px;
   background-color: var(--orange);
   border: none;
-  margin-top: 32px;
-  cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1656,11 +1617,12 @@ button {
   .modal-close-btn {
     top: 14px;
     right: 14px;
+    padding: 6px;
   }
 
   .modal-btn-icon {
-    width: 24px;
-    height: 24px;
+    width: 12px;
+    height: 12px;
   }
 
   .modal-title {
