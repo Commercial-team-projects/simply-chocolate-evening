@@ -582,6 +582,7 @@ button {
   .benefits-list {
     min-width: 704px;
     flex-wrap: wrap;
+    justify-content: start;
     gap: 32px;
   }
 
@@ -840,12 +841,83 @@ button {
   gap: 20px;
 }
 
-.made-img {
+.made-thumb {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
   border-radius: 15px;
 }
+
 .made-image {
-  position: relative;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
+
+.made-image-container {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.made-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.made-video {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.made-thumb.is-playing .made-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.made-play-btn {
+  position: absolute;
+  padding: 9px 8px 9px 12px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--white);
+  background-color: transparent;
+  z-index: 2;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-triangle-btn {
+  display: block;
+  fill: var(--white);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.made-play-btn:focus svg,
+.made-play-btn:hover svg {
+  fill: var(--orange);
+}
+
+.made-play-btn:focus,
+.made-play-btn:hover {
+  border: 1px var(--orange) solid;
+}
+
 .made-image::after {
   content: "";
   background-image: linear-gradient(
@@ -860,7 +932,7 @@ button {
 }
 
 .made-recipe-container {
-  width: 500px;
+  width: 516px;
   background-color: var(--white);
   padding: 32px;
   border-radius: 15px;
@@ -876,6 +948,7 @@ button {
 .recipe-desc {
   line-height: 1.3;
   letter-spacing: -0.02em;
+  width: 425px;
 }
 
 .recipe-list::before {
@@ -897,10 +970,6 @@ button {
   margin-bottom: 24px;
 }
 
-.made-thumb button {
-  display: none;
-}
-
 /*! Tablet Adaptive */
 
 @media (max-width: 1199px) {
@@ -914,8 +983,26 @@ button {
     gap: 20px;
   }
 
+  .made-image-container {
+    width: 100%;
+    max-width: 614px;
+  }
+
+  .made-recipe-title {
+    width: 350px;
+  }
+
+  .recipe-desc {
+    line-height: 1.29;
+    width: 464px;
+  }
+
+  .made-thumb {
+    max-width: 614px;
+    height: 400px;
+  }
+
   .made-recipe-container {
-    padding-right: 102px;
     width: 614px;
   }
 
@@ -930,56 +1017,10 @@ button {
     padding-bottom: 60px;
   }
 
-  .made-thumb button {
-    display: unset;
-  }
-
-  .icon-play-circle {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px var(--white) solid;
-    background-color: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icon-triangle-btn {
-    position: absolute;
-    display: unset;
-    top: 10px;
-    left: 12px;
-    fill: var(--white);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .icon-play-circle:focus svg,
-  .icon-play-circle:hover svg {
-    fill: var(--orange);
-  }
-
-  .icon-play-circle:focus,
-  .icon-play-circle:hover {
-    border: 1px var(--orange) solid;
-  }
-
-  .made-image-container {
-    position: relative;
-  }
-
-  .icon-play-btn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(50%, -50%);
-    background-color: transparent;
-    border: none;
-  }
-
   .made-thumb {
-    position: relative;
-    width: 335px;
+    max-width: 335px;
     height: 500px;
+    aspect-ratio: 335 / 500;
   }
 
   .made-title {
@@ -988,26 +1029,18 @@ button {
     margin-bottom: 32px;
   }
 
+  .made-recipe-title {
+    width: 300px;
+  }
+
   .made-recipe-container {
     padding: 20px 14px;
     width: 335px;
   }
 
-  .made-thumb {
-    position: relative;
-    width: 335px;
-    height: 500px;
-  }
-
-  .made-thumb button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .made-recipe-list li:not(:last-child) {
-    margin-bottom: 18px;
+  .recipe-desc {
+    width: 290px;
+    letter-spacing: -0.03em;
   }
 }
 
