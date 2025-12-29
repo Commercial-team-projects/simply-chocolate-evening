@@ -1398,12 +1398,17 @@ button {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  backdrop-filter: blur(5px);
 }
 
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
+}
+
+body:has(.modal-overlay.is-open) {
+  overflow: hidden;
 }
 
 .modal {
@@ -1416,6 +1421,20 @@ button {
   background-color: var(--body-white);
   border-radius: 15px;
   padding: 40px;
+  max-height: 95vh;
+  max-width: 95vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal::-webkit-scrollbar {
+  width: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: var(--orange);
+  border-radius: 8px;
+  border: 1px solid var(--orange);
 }
 
 .modal-close-btn {
@@ -1610,7 +1629,6 @@ button {
 @media (max-width: 767px) {
   .modal {
     width: 311px;
-    min-height: 619px;
     padding: 32px 24px;
   }
 
