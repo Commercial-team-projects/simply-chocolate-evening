@@ -370,15 +370,6 @@
           <div class="made-container">
             <div class="made-image-container">
               <div class="made-thumb">
-                <button
-                  aria-label="Play video"
-                  type="button"
-                  class="icon-play-circle"
-                >
-                  <svg class="icon-triangle-btn" width="14px" height="15px">
-                    <use href="./images/icons.svg#icon-play-btn"></use>
-                  </svg>
-                </button>
                 <picture class="made-image">
                   <source
                     media="(max-width: 767px)"
@@ -407,6 +398,21 @@
                     class="made-img"
                   />
                 </picture>
+                <button
+                  aria-label="Play video"
+                  type="button"
+                  class="made-play-btn"
+                >
+                  <svg class="icon-triangle-btn" width="14" height="15">
+                    <use href="./images/icons.svg#icon-play-btn"></use>
+                  </svg>
+                </button>
+                <video class="made-video" preload="metadata" playsinline>
+                  <source
+                    src="./images/made-section/chocolate-made.mp4"
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </div>
             <div class="made-recipe-container">

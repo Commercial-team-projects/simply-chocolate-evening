@@ -86,3 +86,23 @@ dots.forEach((dot, index) => {
   });
 });
 window.addEventListener("load", updateActiveDot);
+
+// Made section, play video
+
+const thumb = document.querySelector('.made-thumb');
+const playBtn = document.querySelector('.made-play-btn');
+const video = document.querySelector('.made-video');
+
+playBtn.addEventListener('click', () => {
+  thumb.classList.add('is-playing');
+  video.setAttribute('controls', '');
+  video.play();
+  playBtn.style.display = 'none';
+});
+
+video.addEventListener('ended', () => {
+  thumb.classList.remove('is-playing');
+  playBtn.style.display = '';
+});
+
+
