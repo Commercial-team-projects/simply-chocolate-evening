@@ -105,4 +105,20 @@ video.addEventListener('ended', () => {
   playBtn.style.display = '';
 });
 
+// Buy now modal
 
+const buymodalLayer = document.querySelector(".buynow-backdrop");
+const buymodalOpenBtn = document.querySelector(".btn-buy");
+const buymodalCloseBtn = document.querySelector(".buynow-modal-close-btn");
+
+buymodalOpenBtn.addEventListener("click", (event) => {
+  {
+    buymodalLayer.classList.add("is-open");
+  }
+});
+
+buymodalCloseBtn.addEventListener("click", (event) => {
+  {
+    buymodalLayer.classList.remove("is-open");
+  }
+});

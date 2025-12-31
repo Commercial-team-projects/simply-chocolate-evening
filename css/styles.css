@@ -1415,7 +1415,8 @@ button {
 /* #endregion */
 
 /* #region MODAL */
-.modal-overlay {
+.modal-overlay,
+.buynow-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1434,17 +1435,19 @@ button {
   backdrop-filter: blur(5px);
 }
 
-.modal-overlay.is-open {
+.modal-overlay.is-open,
+.buynow-backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
 }
 
-body:has(.modal-overlay.is-open) {
+body:has(.modal-overlay.is-open, .buynow-backdrop.is-open) {
   overflow: hidden;
 }
 
-.modal {
+.modal,
+.buynow-modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1460,17 +1463,20 @@ body:has(.modal-overlay.is-open) {
   overflow-x: hidden;
 }
 
-.modal::-webkit-scrollbar {
+.modal::-webkit-scrollbar,
+.buynow-modal::-webkit-scrollbar {
   width: 4px;
 }
 
-.modal::-webkit-scrollbar-thumb {
+.modal::-webkit-scrollbar-thumb,
+.buynow-modal::-webkit-scrollbar-thumb {
   background: var(--orange);
   border-radius: 8px;
   border: 1px solid var(--orange);
 }
 
-.modal-close-btn {
+.modal-close-btn,
+.buynow-modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -1665,7 +1671,8 @@ body:has(.modal-overlay.is-open) {
     padding: 32px 24px;
   }
 
-  .modal-close-btn {
+  .modal-close-btn,
+  .buynow-modal-close-btn {
     top: 14px;
     right: 14px;
     padding: 6px;
