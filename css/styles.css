@@ -1320,9 +1320,6 @@ button {
 }
 
 @media (max-width: 1199px) {
-  .footer-slogan {
-    font-size: 28px;
-  }
   .row-2 {
     display: flex;
     justify-content: space-between;
