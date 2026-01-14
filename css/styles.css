@@ -1414,6 +1414,7 @@ button {
 
 body:has(.modal-overlay.is-open, .buynow-backdrop.is-open) {
   overflow: hidden;
+  padding-right: var(--scrollbar-width);
 }
 
 .modal,
