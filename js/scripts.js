@@ -122,3 +122,7 @@ buymodalCloseBtn.addEventListener("click", (event) => {
     buymodalLayer.classList.remove("is-open");
   }
 });
+
+// Scrollbar jump fixed
+const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+document.documentElement.style.setProperty('--scrollbar-width', scrollbarWidth + 'px');
