@@ -1374,11 +1374,13 @@ button {
     align-items: start;
   }
   .subscribe-input {
-    width: 207px;
+    max-width: 207px;
+    width: 100%;
     padding: 14px 18px;
   }
   .subscribe-btn {
     width: 120px;
+    width: auto;
     padding: 14px 24px;
   }
 }
